@@ -1,4 +1,16 @@
 /* =-=-=-=-=-=-=-=-=-=-=-=- Geral =-=-=-=-=-=-=-=-=-=-=-=- */
+.logo{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    cursor: pointer;
+}
+
+.logo:hover::before {
+    background: #F7F7F7 !important;
+    opacity: 0.2 !important;
+}
+
 .botao {
     color: #fff;
     font-size: 15px;
@@ -13,6 +25,7 @@
 .botao:active {
     background: #FF385C !important;
     transform: scale(0.95);
+    transition: transform 0.1s ease-in-out;
   }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=- Sessão um =-=-=-=-=-=-=-=-=-=-=-=- */
