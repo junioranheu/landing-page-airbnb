@@ -5,8 +5,8 @@ export default function SessaoTres() {
     return (
         <React.Fragment >
             <div className={Styles.sessaoTres}>
-                Três
+                Três!
             </div>
-        </React.Fragment >
+        </React.Fragment > 
     )
 }
