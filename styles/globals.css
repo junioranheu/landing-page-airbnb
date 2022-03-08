@@ -8,6 +8,10 @@ html, body {
   src: local('Circular Std');
 }
 
+.esconder {
+  display: none !important;
+}
+
 a {
   color: inherit;
   text-decoration: none;

@@ -90,22 +90,59 @@
 .sessaoUm .nomesAnfitrioes {
     color: #fff;
     position: absolute;
-    bottom: 2vw;
+    bottom: 2.5vw;
     left: 53vw;
 }
 
-.spanAnfitriaoChelsea {
-    font-family: 'LTEg';
-    src: local('LTEg');
-    font-size: 70px;
-    display: block;
-    background-color: #FF385C;
-    /* line-height: 20px; */
-
+.botaoReproduzirVideo {
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    appearance: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 0px;
+    outline: 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    touch-action: manipulation;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 1.7vw;
 }
 
-.spanAnfitriaoDescricao{
-    margin-top: -10px;
+.botaoReproduzirVideo svg {
+    fill: whitesmoke;
+    width: 70%;
+}
+
+.spanAnfitriaoTitulo {
+    font-size: 80px;
+    display: block;
+    line-height: 70px;
+    /* background-color: #FF385C; */
+}
+
+.spanAnfitriaoDescricao {
+    font-size: 20px;
+}
+
+.spanAnfitriaoChelsea {
+    font-family: 'LTEgo';
+}
+
+.spanAnfitriaoSomaya {
+    font-family: 'hybi4';
+}
+
+.spanAnfitriaoMohamed {
+    font-family: 'crusellia';
+}
+
+.spanAnfitriaoMaria {
+    font-family: 'saturdaypartygt';
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=- Sessão dois =-=-=-=-=-=-=-=-=-=-=-=- */
