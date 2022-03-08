@@ -6,12 +6,7 @@
     cursor: pointer;
 }
 
-.logo:hover::before {
-    background: #F7F7F7;
-    opacity: 0.2;
-}
-
-.logo::before {
+.logo::before, .sessaoUm .botaoNavegarBaixo::before {
     content: "";
     display: block;
     position: absolute;
@@ -23,6 +18,11 @@
     width: 64px;
     height: 64px;
     border-radius: 50%;
+}
+
+.logo:hover::before,.sessaoUm .botaoNavegarBaixo:hover::before {
+    background: #F7F7F7;
+    opacity: 0.2;
 }
 
 .botao {
@@ -63,6 +63,17 @@
     margin-top: 2vw;
 }
 
+.sessaoUm .botaoNavegarBaixo {
+    position: absolute;
+    bottom: 4vw;
+    cursor: pointer;
+}
+
+.sessaoUm .botaoNavegarBaixo::before {
+    width: 30px !important;
+    height: 30px !important;
+}
+
 .sessaoUm .tituloPrincipal {
     text-align: center;
     color: #fff;
@@ -94,7 +105,7 @@
     left: 53vw;
 }
 
-.botaoReproduzirVideo {
+.sessaoUm .botaoReproduzirVideo {
     -webkit-box-align: center;
     -webkit-box-pack: center;
     appearance: none;
@@ -113,35 +124,34 @@
     margin-bottom: 30px;
 }
 
-.botaoReproduzirVideo svg {
+.sessaoUm .botaoReproduzirVideo svg {
     fill: whitesmoke;
     width: 70%;
 }
 
-.spanAnfitriaoTitulo {
+.sessaoUm .spanAnfitriaoTitulo {
     font-size: 80px;
     display: block;
     line-height: 80px;
-    /* background-color: #FF385C; */
 }
 
-.spanAnfitriaoDescricao {
+.sessaoUm .spanAnfitriaoDescricao {
     font-size: 20px;
 }
 
-.spanAnfitriaoChelsea {
+.sessaoUm .spanAnfitriaoChelsea {
     font-family: 'LTEgo';
 }
 
-.spanAnfitriaoSomaya {
+.sessaoUm .spanAnfitriaoSomaya {
     font-family: 'hybi4';
 }
 
-.spanAnfitriaoMohamed {
+.sessaoUm .spanAnfitriaoMohamed {
     font-family: 'crusellia';
 }
 
-.spanAnfitriaoMaria {
+.sessaoUm .spanAnfitriaoMaria {
     font-family: 'saturdaypartygt';
 }
 

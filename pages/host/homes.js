@@ -3,6 +3,7 @@ import VideoUm from '../../static/videos/videoUm.webm';
 import Styles from '../../styles/host.module.css';
 
 export default function Homes() {
+    // Sessão um;
     const [isPlaying, setIsPlaying] = useState(true);
     const refVideo = useRef(null);
     function handleReproduzirVideo() {
@@ -60,12 +61,12 @@ export default function Homes() {
             if (tempo >= fimVideo) {
                 qtdLoopVideoAtual++;
                 // console.log('Completou +1 loop: ' + qtdLoopVideoAtual);
-        
+
                 // Se o vídeo rodar duas vezes;
                 if (qtdLoopVideoAtual === qtdMaxLoopVideo) {
                     refVideo.current.currentTime = 1; // Setar início do vídeo novamente;
                     refVideo.current.pause(); // Pausar vídeo;
-                    setIsPlaying(false);           
+                    setIsPlaying(false);
                     qtdLoopVideoAtual = 0;
                 }
             }
@@ -73,6 +74,13 @@ export default function Homes() {
 
         return () => clearInterval(intervalo);
     }, [])
+
+    const refSessaoDois = useRef(null);
+    function handleBotaoSessaoDois() {
+        refSessaoDois.current.scrollIntoView();
+    }
+
+    // Sessão dois;
 
     return (
         <React.Fragment>
@@ -97,6 +105,15 @@ export default function Homes() {
                         <div className={Styles.divBotao}>
                             <input className={Styles.botao} type='button' value='Experimente hospedar' />
                         </div>
+                    </div>
+
+                    <div className={Styles.botaoNavegarBaixo} onClick={() => handleBotaoSessaoDois()}>
+                        <svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'
+                            style={{ display: 'block', fill: 'none', height: '16px', width: '16px', stroke: '#fff', strokeWidth: '4', overflow: 'visible' }}
+                            aria-hidden='true' role='presentation' focusable='false'>
+
+                            <path d='m28 12-11.2928932 11.2928932c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-11.2928932-11.2928932'></path>
+                        </svg>
                     </div>
                 </div>
 
@@ -157,7 +174,7 @@ export default function Homes() {
             </div>
 
             {/* Sessão dois */}
-            <div className={Styles.sessaoDois}>
+            <div className={Styles.sessaoDois} ref={refSessaoDois}>
                 oi
             </div>
         </React.Fragment >

@@ -2,7 +2,8 @@ html, body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-
+  scroll-behavior: smooth;
+  
   /* Fonte */
   font-family: 'Circular Std';
   src: local('Circular Std');
