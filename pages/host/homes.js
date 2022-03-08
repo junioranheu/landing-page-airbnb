@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import VideoUm from '../../static/videos/videoUm.webm';
 import Styles from '../../styles/host.module.css';
 
@@ -14,6 +14,48 @@ export default function Homes() {
             setIsPlaying(true);
         }
     }
+
+    const [isMostrarChelsea, setIsMostrarChelsea] = useState(true);
+    const [isMostrarSomaya, setIsMostrarSomaya] = useState(false);
+    const [isMostrarMohamed, setIsMostrarMohamed] = useState(false);
+    const [isMostrarMaria, setIsMostrarMaria] = useState(false);
+    useEffect(() => {
+        // Tempos para mudar o nome exibido;
+        const chelsea = 0;
+        const somaya = 1.9;
+        const mohamed = 3.6;
+        const maria = 5;
+
+        const intervalo = setInterval(() => {
+            let tempo = refVideo.current.currentTime;
+            // console.log(tempo);
+
+            // Definir o tempo das mudanças com base no tempo atual do vídeo;
+            if (tempo >= chelsea && tempo < somaya) {
+                setIsMostrarChelsea(true);
+                setIsMostrarSomaya(false);
+                setIsMostrarMohamed(false);
+                setIsMostrarMaria(false);
+            } else if (tempo >= somaya && tempo < mohamed) {
+                setIsMostrarChelsea(false);
+                setIsMostrarSomaya(true);
+                setIsMostrarMohamed(false);
+                setIsMostrarMaria(false);
+            } else if (tempo >= chelsea && tempo < maria) {
+                setIsMostrarChelsea(false);
+                setIsMostrarSomaya(false);
+                setIsMostrarMohamed(true);
+                setIsMostrarMaria(false);
+            } else if (tempo >= chelsea) {
+                setIsMostrarChelsea(false);
+                setIsMostrarSomaya(false);
+                setIsMostrarMohamed(false);
+                setIsMostrarMaria(true);
+            }
+        }, 100);
+
+        return () => clearInterval(intervalo);
+    }, [])
 
     return (
         <React.Fragment>
@@ -66,25 +108,33 @@ export default function Homes() {
                             )}
                         </div>
 
-                        <div>
-                            <span className={`${Styles.spanAnfitriaoTitulo} ${Styles.spanAnfitriaoChelsea}`}>Chelsea</span>
-                            <span className={Styles.spanAnfitriaoDescricao}>Anfitriã na Filadélfia</span>
-                        </div>
+                        {isMostrarChelsea && (
+                            <div className='animate__animated animate__fadeIn animate__faster'>
+                                <span className={`${Styles.spanAnfitriaoTitulo} ${Styles.spanAnfitriaoChelsea}`}>Chelsea</span>
+                                <span className={Styles.spanAnfitriaoDescricao}>Anfitriã na Filadélfia</span>
+                            </div>
+                        )}
 
-                        <div className='esconder'>
-                            <span className={`${Styles.spanAnfitriaoTitulo} ${Styles.spanAnfitriaoSomaya}`}>Somaya</span>
-                            <span className={Styles.spanAnfitriaoDescricao}>Anfitriã na Mumbai</span>
-                        </div>
+                        {isMostrarSomaya && (
+                            <div className='animate__animated animate__fadeIn animate__faster'>
+                                <span className={`${Styles.spanAnfitriaoTitulo} ${Styles.spanAnfitriaoSomaya}`}>Somaya</span>
+                                <span className={Styles.spanAnfitriaoDescricao}>Anfitriã na Mumbai</span>
+                            </div>
+                        )}
 
-                        <div className='esconder'>
-                            <span className={`${Styles.spanAnfitriaoTitulo} ${Styles.spanAnfitriaoMohamed}`}>Mohamed</span>
-                            <span className={Styles.spanAnfitriaoDescricao}>Anfitrião em Joanesburgo</span>
-                        </div>
+                        {isMostrarMohamed && (
+                            <div className='animate__animated animate__fadeIn animate__faster'>
+                                <span className={`${Styles.spanAnfitriaoTitulo} ${Styles.spanAnfitriaoMohamed}`}>Mohamed</span>
+                                <span className={Styles.spanAnfitriaoDescricao}>Anfitrião em Joanesburgo</span>
+                            </div>
+                        )}
 
-                        <div className='esconder'>
-                            <span className={`${Styles.spanAnfitriaoTitulo} ${Styles.spanAnfitriaoMaria}`}>María</span>
-                            <span className={Styles.spanAnfitriaoDescricao}>Anfitrião na Cidade do México</span>
-                        </div>
+                        {isMostrarMaria && (
+                            <div className='animate__animated animate__fadeIn animate__faster'>
+                                <span className={`${Styles.spanAnfitriaoTitulo} ${Styles.spanAnfitriaoMaria}`}>María</span>
+                                <span className={Styles.spanAnfitriaoDescricao}>Anfitrião na Cidade do México</span>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>

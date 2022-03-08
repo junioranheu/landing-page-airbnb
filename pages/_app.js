@@ -1,3 +1,4 @@
+import 'animate.css/animate.min.css';
 import '../fonts/circular.css';
 import '../fonts/homes/crusellia.css';
 import '../fonts/homes/hybi4.css';

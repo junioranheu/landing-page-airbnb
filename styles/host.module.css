@@ -110,7 +110,7 @@
     touch-action: manipulation;
     width: 32px;
     height: 32px;
-    margin-bottom: 1.7vw;
+    margin-bottom: 30px;
 }
 
 .botaoReproduzirVideo svg {
@@ -121,7 +121,7 @@
 .spanAnfitriaoTitulo {
     font-size: 80px;
     display: block;
-    line-height: 70px;
+    line-height: 80px;
     /* background-color: #FF385C; */
 }
 
