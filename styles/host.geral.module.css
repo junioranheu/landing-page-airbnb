@@ -6,7 +6,7 @@
     cursor: pointer;
 }
 
-.logo::before, .sessaoUm .botaoNavegarBaixo::before {
+.logo::before {
     content: "";
     display: block;
     position: absolute;
@@ -20,7 +20,7 @@
     border-radius: 50%;
 }
 
-.logo:hover::before,.sessaoUm .botaoNavegarBaixo:hover::before {
+.logo:hover::before {
     background: #F7F7F7;
     opacity: 0.2;
 }

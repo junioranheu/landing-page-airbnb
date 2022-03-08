@@ -26,8 +26,22 @@
 }
 
 .sessaoUm .botaoNavegarBaixo::before {
-    width: 30px !important;
-    height: 30px !important;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.sessaoUm .botaoNavegarBaixo:hover::before {
+    background: #F7F7F7;
+    opacity: 0.2;
 }
 
 .sessaoUm .tituloPrincipal {
