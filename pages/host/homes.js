@@ -25,6 +25,9 @@ export default function Homes() {
         const somaya = 1.9;
         const mohamed = 3.6;
         const maria = 5;
+        const fimVideo = 7.5;
+        let qtdLoopVideoAtual = 0;
+        const qtdMaxLoopVideo = 2;
 
         const intervalo = setInterval(() => {
             let tempo = refVideo.current.currentTime;
@@ -51,6 +54,20 @@ export default function Homes() {
                 setIsMostrarSomaya(false);
                 setIsMostrarMohamed(false);
                 setIsMostrarMaria(true);
+            }
+
+            // Fim do vídeo;
+            if (tempo >= fimVideo) {
+                qtdLoopVideoAtual++;
+                // console.log('Completou +1 loop: ' + qtdLoopVideoAtual);
+        
+                // Se o vídeo rodar duas vezes;
+                if (qtdLoopVideoAtual === qtdMaxLoopVideo) {
+                    refVideo.current.currentTime = 1; // Setar início do vídeo novamente;
+                    refVideo.current.pause(); // Pausar vídeo;
+                    setIsPlaying(false);           
+                    qtdLoopVideoAtual = 0;
+                }
             }
         }, 100);
 
