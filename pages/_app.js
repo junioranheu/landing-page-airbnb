@@ -1,4 +1,5 @@
 import '../fonts/circular.css';
+import '../fonts/linoTypeEgo.css';
 import '../styles/globals.css';
 
 function App({ Component, pageProps }) {

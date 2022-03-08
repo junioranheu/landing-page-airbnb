@@ -5,6 +5,7 @@ import Styles from '../../styles/host.module.css';
 export default function Homes() {
     return (
         <React.Fragment>
+            {/* Sessão um */}
             <div className={Styles.sessaoUm}>
                 <div className={Styles.divEsquerda}>
                     <span className={Styles.logo}>
@@ -33,9 +34,31 @@ export default function Homes() {
                         aria-label='Chelsea, anfitriã na Filadélfia, sorri ao abrir a porta. Soraya, anfitriã em Mumbai, sorri ao abrir a porta da frente com outra pessoa ao seu lado. Mohamed, anfitrião em Joanesburgo, sorri ao abrir a porta. Maria, anfitriã na Cidade do México, acena com a cabeça e sorri ao carregar uma planta.'>
                         <source src={VideoUm} type='video/mp4' />
                     </video>
+
+                    <div className={Styles.nomesAnfitrioes}>
+                        <div>
+                            <span>Botão</span>
+                        </div>
+
+                        <div>
+                            <span className={Styles.spanAnfitriaoChelsea}>Chelsea</span>
+                            <span className={Styles.spanAnfitriaoDescricao}>Anfitriã na Filadélfia</span>
+                        </div>
+
+                        <div>
+                            <span>Soraya</span>
+                            <span>Anfitriã na Mumbai</span>
+                        </div>
+
+                        <div>
+                            <span>Chelsea</span>
+                            <span>Anfitrião em Joanesburgo</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            {/* Sessão dois */}
             <div className={Styles.sessaoDois}>
                 oi
             </div>

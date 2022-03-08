@@ -1,5 +1,5 @@
 /* =-=-=-=-=-=-=-=-=-=-=-=- Geral =-=-=-=-=-=-=-=-=-=-=-=- */
-.logo{
+.logo {
     position: absolute;
     top: 50px;
     left: 50px;
@@ -7,8 +7,22 @@
 }
 
 .logo:hover::before {
-    background: #F7F7F7 !important;
-    opacity: 0.2 !important;
+    background: #F7F7F7;
+    opacity: 0.2;
+}
+
+.logo::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
 }
 
 .botao {
@@ -23,10 +37,10 @@
 }
 
 .botao:active {
-    background: #FF385C !important;
+    background: #FF385C;
     transform: scale(0.95);
     transition: transform 0.1s ease-in-out;
-  }
+}
 
 /* =-=-=-=-=-=-=-=-=-=-=-=- Sessão um =-=-=-=-=-=-=-=-=-=-=-=- */
 .sessaoUm {
@@ -62,7 +76,7 @@
 }
 
 .sessaoUm .divDireita {
-    background-color: thistle;
+    background-color: #000;
     width: 50vw;
 }
 
@@ -71,6 +85,27 @@
     width: 100%;
     object-fit: cover;
     object-position: center top;
+}
+
+.sessaoUm .nomesAnfitrioes {
+    color: #fff;
+    position: absolute;
+    bottom: 2vw;
+    left: 53vw;
+}
+
+.spanAnfitriaoChelsea {
+    font-family: 'LTEg';
+    src: local('LTEg');
+    font-size: 70px;
+    display: block;
+    background-color: #FF385C;
+    /* line-height: 20px; */
+
+}
+
+.spanAnfitriaoDescricao{
+    margin-top: -10px;
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=- Sessão dois =-=-=-=-=-=-=-=-=-=-=-=- */
