@@ -79,7 +79,7 @@ export default function SessaoUm(props) {
     function handleBotaoSessaoDois() {
         props.handleBotaoSessaoDois();
     }
-
+ 
     return (
         <div className={Styles.sessaoUm}>
             <div className={Styles.divEsquerda}>

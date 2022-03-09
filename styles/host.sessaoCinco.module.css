@@ -1,6 +1,83 @@
 /* =-=-=-=-=-=-=-=-=-=-=-=- Sessão cinco =-=-=-=-=-=-=-=-=-=-=-=- */
 .sessaoCinco {
-    background-color: thistle;
+    margin-top: 3vw;
     width: 100vw;
     height: 100vh;
+    display: flex; 
 }
+
+.divEsquerda {
+    background-color: #000;
+    width: 50vw;
+}
+
+.divBotao {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+}
+
+.tituloPrincipal {
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.tituloPrincipal span {
+    display: block;
+    margin-top: -0.2em;
+}
+
+.tituloPequeno{
+    margin-top: 1.8vw !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+}
+
+.divDireita {
+    background-color: #000;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.divPlay {
+    color: #fff;
+    position: relative;
+    bottom: 3.5vw;
+    left: 2vw;
+}
+
+.botaoReproduzirVideo {
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    appearance: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 0px;
+    outline: 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    touch-action: manipulation;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 30px;
+}
+
+.botaoReproduzirVideo svg {
+    fill: whitesmoke;
+    width: 70%;
+}
+

@@ -5,7 +5,7 @@
     display: flex;
 }
 
-.sessaoUm .divEsquerda {
+.divEsquerda {
     background-color: #000;
     width: 50vw;
     display: flex;
@@ -13,19 +13,19 @@
     align-items: center;
 }
 
-.sessaoUm .divBotao {
+.divBotao {
     display: flex;
     justify-content: center;
     margin-top: 2vw;
 }
 
-.sessaoUm .botaoNavegarBaixo {
+.botaoNavegarBaixo {
     position: absolute;
     bottom: 4vw;
     cursor: pointer;
 }
 
-.sessaoUm .botaoNavegarBaixo::before {
+.botaoNavegarBaixo::before {
     content: "";
     display: block;
     position: absolute;
@@ -39,43 +39,43 @@
     border-radius: 50%;
 }
 
-.sessaoUm .botaoNavegarBaixo:hover::before {
+.botaoNavegarBaixo:hover::before {
     background: #F7F7F7;
     opacity: 0.2;
 }
 
-.sessaoUm .tituloPrincipal {
+.tituloPrincipal {
     text-align: center;
     color: #fff;
     font-size: 65px;
     font-weight: 500;
 }
 
-.sessaoUm .tituloPrincipal span {
+.tituloPrincipal span {
     display: block;
     margin-top: -0.2em;
 }
 
-.sessaoUm .divDireita {
+.divDireita {
     background-color: #000;
     width: 50vw;
 }
 
-.sessaoUm .video {
+.video {
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center top;
 }
 
-.sessaoUm .nomesAnfitrioes {
+.nomesAnfitrioes {
     color: #fff;
     position: absolute;
     bottom: 2.5vw;
     left: 53vw;
 }
 
-.sessaoUm .botaoReproduzirVideo {
+.botaoReproduzirVideo {
     -webkit-box-align: center;
     -webkit-box-pack: center;
     appearance: none;
@@ -94,33 +94,33 @@
     margin-bottom: 30px;
 }
 
-.sessaoUm .botaoReproduzirVideo svg {
+.botaoReproduzirVideo svg {
     fill: whitesmoke;
     width: 70%;
 }
 
-.sessaoUm .spanAnfitriaoTitulo {
+.spanAnfitriaoTitulo {
     font-size: 80px;
     display: block;
     line-height: 80px;
 }
 
-.sessaoUm .spanAnfitriaoDescricao {
+.spanAnfitriaoDescricao {
     font-size: 20px;
 }
 
-.sessaoUm .spanAnfitriaoChelsea {
+.spanAnfitriaoChelsea {
     font-family: 'LTEgo';
 }
 
-.sessaoUm .spanAnfitriaoSomaya {
+.spanAnfitriaoSomaya {
     font-family: 'hybi4';
 }
 
-.sessaoUm .spanAnfitriaoMohamed {
+.spanAnfitriaoMohamed {
     font-family: 'crusellia';
 }
 
-.sessaoUm .spanAnfitriaoMaria {
+.spanAnfitriaoMaria {
     font-family: 'saturdaypartygt';
 }
