@@ -1,6 +1,130 @@
 /* =-=-=-=-=-=-=-=-=-=-=-=- Sessão quatro =-=-=-=-=-=-=-=-=-=-=-=- */
 .sessaoQuatro {
-    background-color: palevioletred;
+    /* background-color: palevioletred; */
     width: 100vw;
+    /* height: 100vh; */
+}
+
+.divPrincipal {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: pink; */
+}
+
+.cardUm {
+    background-color: #fff;
+    border-radius: 12px;
+    width: 92vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: url('../static/images/cardUmGrande.webp') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    object-fit: contain;
+}
+
+.cardUm span {
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.cardUm .divBotao {
+    margin-top: 4.5vw;
+}
+
+.cardDois {
+    background-color: #F7F7F7;
+    border-radius: 12px;
+    width: 92vw;
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+
+    padding-left: 5vw;
+
+    /* background: url('../static/images/cardDoisGrande.webp') no-repeat center center; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    object-fit: contain;
+}
+
+.cardDois span {
+    color: #222222;
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.cardDois .divBotao {
+    margin-top: 2vw;
+}
+
+.aircoverUm {
+    font-size: 5em !important;
+    font-weight: bold !important;
+    color: rgb(255, 56, 92) !important;
+}
+
+.aircoverDois {
+    font-size: 5em !important;
+    font-weight: bold !important;
+}
+
+.botao {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    border-width: 1px;
+    width: auto;
+    padding-top: 4px;
+    background: lightgrey;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    outline: none;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 23px;
+    padding-right: 23px;
+    -webkit-transition: box-shadow 0.2s ease, -webkit-transform 0.1s ease, transform 0.1s ease;
+    -moz-transition: box-shadow 0.2s ease, transform 0.1s ease;
+    transition: box-shadow 0.2s ease, -ms-transform 0.1s ease, -webkit-transform 0.1s ease, transform 0.1s ease;
+    -webkit-tap-highlight-color: transparent;
+    border-color: #222222;
+    background: #FFFFFF;
+    color: #222222;
+}
+
+.botao:active {
+    -webkit-transform: scale(0.96);
+    -ms-transform: scale(0.96);
+    transform: scale(0.96);
+    border-color: #000000;
+    background: #F7F7F7;
+    color: #222222;
 }
