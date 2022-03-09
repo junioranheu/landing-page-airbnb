@@ -51,7 +51,7 @@ export default function SessaoCinco() {
                         <span>Experimente ser anfitrião</span>
                         <span>no Airbnb</span>
 
-                        <span class={Styles.tituloPequeno}>
+                        <span className={Styles.tituloPequeno}>
                             <span>Faça parte da comunidade. Ajudaremos você</span>
                             <span>a cada etapa.</span>
                         </span>
