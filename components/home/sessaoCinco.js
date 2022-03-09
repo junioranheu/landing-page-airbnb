@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import VideoDois from '../../static/videos/videoDois.webm';
 import StylesGeral from '../../styles/host.geral.module.css';
 import Styles from '../../styles/host.sessaoCinco.module.css';
-
+ 
 export default function SessaoCinco() {
     const [isPlaying, setIsPlaying] = useState(true);
     const refVideo = useRef(null);
