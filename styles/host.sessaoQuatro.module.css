@@ -6,12 +6,13 @@
 }
 
 .divPrincipal {
-    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
     /* background-color: pink; */
+}
+
+.divPrincipal:nth-child(2){
+    margin-top: 2vw;;
 }
 
 .cardUm {
