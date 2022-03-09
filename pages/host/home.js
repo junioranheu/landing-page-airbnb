@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import SessaoCinco from '../../components/home/sessaoCinco';
 import SessaoQuatro from '../../components/home/sessaoQuatro';
 import SessaoUm from '../../components/home/sessaoUm';
 import SessaoDois from '../../components/home/sesssaoDois';
@@ -12,17 +13,15 @@ export default function Home() {
     const refSessaoDois = useRef(null);
     function handleBotaoSessaoDois() {
         refSessaoDois.current.scrollIntoView();
-    } 
+    }
 
     return (
         <React.Fragment>
             <SessaoUm handleBotaoSessaoDois={() => handleBotaoSessaoDois()} />
-
             <SessaoDois referencia={refSessaoDois} />
-
             <SessaoTres />
-
             <SessaoQuatro />
+            <SessaoCinco />
         </React.Fragment >
     )
 }

@@ -45,7 +45,7 @@
 }
 
 .cardDois {
-    background-color: #F7F7F7;
+    background-color: #F7F7F7 !important;
     border-radius: 12px;
     width: 92vw;
     height: 70vh;
@@ -57,12 +57,11 @@
 
     padding-left: 5vw;
 
-    /* background: url('../static/images/cardDoisGrande.webp') no-repeat center center; */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    object-fit: contain;
+    background: url('../static/images/cardDoisGrande.webp');
+    background-position: 100% 20px;
+    /* background-size: 40%; */
+    background-size: 700px;
+    background-repeat: no-repeat;
 }
 
 .cardDois span {
