@@ -2,14 +2,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100vw;
     background-color: #F7F7F7;
 }
 
+/* =-=-=-=-=-=-=-=-=-=-=-=- Principal =-=-=-=-=-=-=-=-=-=-=-=- */
 .principal {
     display: flex;
     justify-content: center;
-    width: 70vw;
+    width: 65vw;
     margin-top: 2.5vw;
     margin-bottom: 2vw;
 }
@@ -27,25 +29,42 @@
     font-size: 14px;
     line-height: 18px;
     font-weight: 100;
-    margin-top: 15px;
+    margin-top: 18px;
 }
 
 .sessao a:hover {
     text-decoration: underline !important;
+} 
+
+/* =-=-=-=-=-=-=-=-=-=-=-=- Secundária =-=-=-=-=-=-=-=-=-=-=-=- */
+.secundaria {
+    border-top: 1px solid #DDDDDD;
+    width: 65vw;
+    font-weight: 100;
+    font-size: 14px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
 }
 
-/* .sessao:nth-child(1) {
-    background-color: pink;
+.secundaria span:nth-child(n+2) {
+    margin-left: 10px;
 }
 
-.sessao:nth-child(2) {
-    background-color: rebeccapurple;
+.secundaria .direita {
+    display: flex;
 }
 
-.sessao:nth-child(3) {
-    background-color: blanchedalmond;
-}
-
-.sessao:nth-child(4) {
+.secundaria .direita .config{
     background-color: royalblue;
-} */
+    display: flex;
+    justify-content: space-between;
+}
+
+.secundaria .direita .icones{
+    background-color: rebeccapurple;
+    margin-left: 3vw;
+    display: flex;
+    justify-content: space-between;
+}
