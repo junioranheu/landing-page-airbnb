@@ -2,19 +2,19 @@ import Link from 'next/link';
 import React, { useEffect } from 'react';
 import Styles from '../styles/x.module.css';
 
-export default function Index() {
+export default function Erro() {
     useEffect(() => {
-        document.title = 'Airbnb - Em React.js, Next.js';
+        document.title = '404';
     }, [])
 
     return (
         <div className={Styles.principal}>
-            <span>Projeto em desenvolvimento</span>
+            <span>404 | Essa página não foi encontrada.</span>
 
             <span>
-                <Link href='/host/home'>
+                <Link href='/'>
                     <a>
-                        Clique aqui para ser direcionado à página em construção
+                        Volte aqui
                     </a>
                 </Link>
             </span>

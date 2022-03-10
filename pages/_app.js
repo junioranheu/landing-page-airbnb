@@ -11,8 +11,10 @@ import '../styles/globals.css';
 function App({ Component, pageProps }) {
   return (
     <React.Fragment>
-      <Component {...pageProps} />
-      <Footer />
+      <main className='main'>
+        <Component {...pageProps} />
+        <Footer />
+      </main>
     </React.Fragment>
   )
 }

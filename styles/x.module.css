@@ -1,0 +1,19 @@
+.principal {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px
+    /* background-color: pink; */
+}
+
+.principal span:first-child {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.principal span:nth-child(2) {
+    font-weight: 100;
+    font-size: 25px;
+}

@@ -6,7 +6,7 @@ import Terra from '../svg/terra';
 import Twitter from '../svg/twitter';
 
 export default function Footer() {
-    return (
+    return (     
         <footer className={Styles.footer}>
             {/* Principal */}
             <div className={Styles.principal}>

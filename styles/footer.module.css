@@ -5,6 +5,8 @@
     flex-direction: column;
     width: 100vw;
     background-color: #F7F7F7;
+    /* Fixar footer sempre embaixo */
+    margin-top: auto;
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=- Principal =-=-=-=-=-=-=-=-=-=-=-=- */
