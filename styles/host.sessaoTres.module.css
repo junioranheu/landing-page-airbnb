@@ -1,6 +1,58 @@
 /* =-=-=-=-=-=-=-=-=-=-=-=- Sessão três =-=-=-=-=-=-=-=-=-=-=-=- */
 .sessaoTres {
-    background-color: purple;
+    /* background-color: purple; */
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px
+}
+
+.sessaoTres div {
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* Escrita */
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.titulo {
+    color: rgb(113, 113, 113);
+}
+
+.tituloInfo {
+    margin-top: 2vw;
+}
+
+.info {
+    font-weight: 100;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+/* Select */
+.select {
+    width: 100%;
+    border: none;
+    cursor: pointer; 
+    text-align: center;
+
+    /* Escrita */
+    font-weight: 600;
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.select:focus {
+    outline: none;
 }
