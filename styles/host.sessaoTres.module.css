@@ -40,9 +40,9 @@
 
 /* Select */
 .select {
-    width: 100%;
+    /* background-color: pink; */
     border: none;
-    cursor: pointer; 
+    cursor: pointer;
     text-align: center;
 
     /* Escrita */
@@ -51,8 +51,18 @@
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
+
+    /* Esconder arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
 }
 
 .select:focus {
     outline: none;
+}
+
+.select option {
+    font-size: 20px;
 }
