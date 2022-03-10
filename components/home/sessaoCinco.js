@@ -2,7 +2,8 @@ import React, { useRef, useState } from 'react';
 import VideoDois from '../../static/videos/videoDois.webm';
 import StylesGeral from '../../styles/host.geral.module.css';
 import Styles from '../../styles/host.sessaoCinco.module.css';
- 
+import BotaoPlay from '../svg/botaoPlay';
+
 export default function SessaoCinco() {
     const [isPlaying, setIsPlaying] = useState(true);
     const refVideo = useRef(null);
@@ -26,21 +27,7 @@ export default function SessaoCinco() {
 
                 <div className={Styles.divPlay}>
                     <div>
-                        {isPlaying ? (
-                            <button onClick={() => handleReproduzirVideo()}
-                                aria-label='Pausar o vídeo de introdução do anfitrião' type='button' className={Styles.botaoReproduzirVideo}>
-                                <svg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg' aria-hidden='true' role='presentation' focusable='false'>
-                                    <path d='M13 1v14H9V1zM7 1v14H3V1z'></path>
-                                </svg>
-                            </button>
-                        ) : (
-                            <button onClick={() => handleReproduzirVideo()}
-                                aria-label='Reproduzir' type='button' className={Styles.botaoReproduzirVideo}>
-                                <svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' aria-hidden='true' role='presentation' focusable='false'>
-                                    <path d='M27.024 14.273L6.008 2.013c-.461-.268-1-.342-1.517-.206A2 2 0 0 0 3 3.741V28.26a2.002 2.002 0 0 0 3.008 1.728l21.015-12.26a2.003 2.003 0 0 0 .001-3.454z'></path>
-                                </svg>
-                            </button>
-                        )}
+                        <BotaoPlay isPlaying={isPlaying} handleReproduzirVideo={() => handleReproduzirVideo()} style={Styles} />
                     </div>
                 </div>
             </div>

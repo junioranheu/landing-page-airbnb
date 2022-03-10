@@ -1,8 +1,8 @@
 import Styles from '../../styles/host.sessaoDois.module.css';
 
-export default function SessaoDois(prop) {
+export default function SessaoDois(props) {
     return (
-        <div className={Styles.sessaoDois} ref={prop.referencia}>
+        <div className={Styles.sessaoDois} ref={props.referencia}>
             Dois
         </div>
     )

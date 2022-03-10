@@ -1,9 +1,9 @@
 
-export default function Anfitriao(prop) {
+export default function Anfitriao(props) {
     return (
         <div className='animate__animated animate__fadeIn animate__faster'>
-            <span className={`${prop.style.spanAnfitriaoTitulo} ${prop.span}`}>{prop.nome}</span>
-            <span className={prop.style.spanAnfitriaoDescricao}>{prop.descricao}</span>
+            <span className={`${props.style.spanAnfitriaoTitulo} ${props.span}`}>{props.nome}</span>
+            <span className={props.style.spanAnfitriaoDescricao}>{props.descricao}</span>
         </div>
     )
 }
