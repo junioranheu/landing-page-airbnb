@@ -63,9 +63,13 @@
     justify-content: space-between;
 }
 
+.secundaria .direita .config span:nth-child(3) {
+    margin-left: 20px;
+}
+
 .secundaria .direita .icones {
     /* background-color: rebeccapurple; */
-    margin-left: 3vw;
+    margin-left: 60px;
     display: flex;
     justify-content: space-between;
 }

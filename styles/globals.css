@@ -3,7 +3,7 @@ html, body {
   margin: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  
+
   /* Fonte */
   font-family: 'Circular Std';
 }
@@ -36,4 +36,8 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-thumb:hover {
   background: rgba(189, 30, 89, 1);
+}
+
+::selection {
+  background: rgba(255, 56, 92, 1);
 }
