@@ -16,4 +16,5 @@
 .principal span:nth-child(2) {
     font-weight: 100;
     font-size: 25px;
+    color: rgba(255, 56, 92, 1);
 }

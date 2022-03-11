@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import Styles from '../../styles/modal.module.css';
+import BotaoFecharModal from '../svg/botaoFecharModal';
 
 export default function ModalInfoPotencialGanho(props) {
     function fecharModalClicandoNoBotao() {
@@ -16,16 +17,8 @@ export default function ModalInfoPotencialGanho(props) {
 
     return (
         <div className={Styles.fundo} onClick={(e) => fecharModalClicandoNoFundo(e)}>
-            <div className={Styles.modal}>
-                <button aria-label='Fechar' type='button' className={Styles.botaoFechar} title='Fechar' onClick={() => fecharModalClicandoNoBotao()}>
-                    <span className={Styles.spanBotaoFechar}>
-                        <svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' aria-hidden='true' role='presentation' focusable='false'
-                            style={{ display: 'block', fill: 'none', height: '16px', width: '16px', stroke: 'currentcolor', strokeWidth: '3', overflow: 'visible' }}>
-                            <path d='m6 6 20 20'></path>
-                            <path d='m26 6-20 20'></path>
-                        </svg>
-                    </span>
-                </button>
+            <div className={`${Styles.modal} animate__animated animate__fadeInUp animate__faster`}>
+                <BotaoFecharModal style={Styles} height='16px' width='16px' fecharModal={() => fecharModalClicandoNoBotao()} />
 
                 <div>
                     <h2 className={Styles.titulo}>Como estimamos seu potencial de ganho</h2>
