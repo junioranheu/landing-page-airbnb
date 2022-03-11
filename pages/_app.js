@@ -13,6 +13,7 @@ function App({ Component, pageProps }) {
     <React.Fragment>
       <main className='main'>
         <Component {...pageProps} />
+        <div id='modalWrapper'></div>
         <Footer />
       </main>
     </React.Fragment>

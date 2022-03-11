@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Styles from '../../styles/host.sessaoTres.module.css';
+import ModalWrapper from '../outros/modalWrapper';
 
 export default function SessaoTres() {
     const [tipoEspaco, setTipoEspaco] = useState(450);
@@ -30,6 +31,12 @@ export default function SessaoTres() {
 
     return (
         <div className={Styles.sessaoTres}>
+            <ModalWrapper isOpen={false}>
+                <div>
+                    <h1>COCHINO</h1>
+                </div>
+            </ModalWrapper>
+
             <div>
                 <span className={Styles.titulo}>Qual o tipo do seu espaço?</span>
 
@@ -63,8 +70,8 @@ export default function SessaoTres() {
 
             <div>
                 <span className={Styles.tituloInfo}>Ganhe até R${dinheiroTotal} por mês*</span>
-                <Link href='/'><a className={Styles.info}>Clique aqui para ser direcionado à página em construção</a></Link>
+                <Link href='/'><a className={Styles.info}>Como estimamos seu potencial de ganho</a></Link>
             </div>
-        </div >
+        </div>
     )
 }
