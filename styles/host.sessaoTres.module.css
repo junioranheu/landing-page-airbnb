@@ -43,6 +43,7 @@
 /* Select */
 .select {
     /* background-color: pink; */
+    width: 500px;
     border: none;
     cursor: pointer;
     text-align: center;
@@ -55,10 +56,10 @@
     text-underline-offset: 3px;
 
     /* Esconder arrow */
-    -webkit-appearance: none;
+    /* -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
-    text-overflow: '';
+    text-overflow: ''; */
 }
 
 .select:focus {

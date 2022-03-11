@@ -66,12 +66,14 @@ export default function SessaoTres() {
                 <div>
                     <span className={Styles.titulo}>Onde está localizado?</span>
 
+                    <div className={Styles.selectWrapper}>
                     <select className={Styles.select} onChange={(e) => handleChangeLocalizado(e)}>
                         <option value='1.2'>Lorena</option>
                         <option value='1.4'>Guaratinguetá</option>
                         <option value='2'>São José dos Campos</option>
                         <option value='2.5'>São Paulo</option>
                     </select>
+                    </div>
                 </div>
 
                 <div>
