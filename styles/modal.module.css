@@ -1,0 +1,48 @@
+.fundo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(72, 72, 72, 0.6);
+    z-index: 1;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    z-index: 999;
+
+    width: 80vw;
+    max-height: 90vw;
+    padding: 30px;
+
+    overflow-x: hidden;
+    overflow-y: auto !important;
+
+    /* display: flex; */
+}
+
+.fechar {
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #8d0000;
+    cursor: pointer;
+}

@@ -1,7 +1,12 @@
+:root {
+  --overflow-y: auto;
+}
+
 html, body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  overflow-y: var(--overflow-y);
   scroll-behavior: smooth;
 
   /* Fonte padrão */
@@ -28,20 +33,20 @@ a {
   box-sizing: border-box;
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 8px;
 }
 
-body::-webkit-scrollbar-track {
-  background: #0B0909;
+::-webkit-scrollbar-track {
+  background: #fff;
 }
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: rgba(255, 56, 92, 1);
   border-radius: 5px;
 }
 
-body::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
   background: rgba(189, 30, 89, 1);
 }
 

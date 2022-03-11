@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Styles from '../../styles/host.sessaoTres.module.css';
+import ModalInfoPotencialGanho from '../outros/modalInfoPotencialGanho';
 import ModalWrapper from '../outros/modalWrapper';
 
 export default function SessaoTres() {
@@ -29,49 +29,56 @@ export default function SessaoTres() {
         setDinheiroTotal(dinheiro);
     }, [tipoEspaco, qtdHospedes, localizado])
 
+    const [modalInfoPotencialGanhoOpen, setModalInfoPotencialGanhoOpen] = useState(false);
+    function handleModalInfoPotencialGanho() {
+        setModalInfoPotencialGanhoOpen(!modalInfoPotencialGanhoOpen);
+    }
+
     return (
-        <div className={Styles.sessaoTres}>
-            <ModalWrapper isOpen={false}>
-                <div>
-                    <h1>COCHINO</h1>
-                </div>
+        <React.Fragment>
+            {/* Modal */}
+            <ModalWrapper isOpen={modalInfoPotencialGanhoOpen}>
+                <ModalInfoPotencialGanho handleModal={() => handleModalInfoPotencialGanho()} />
             </ModalWrapper>
 
-            <div>
-                <span className={Styles.titulo}>Qual o tipo do seu espaço?</span>
+            {/* Conteúdo */}
+            <div className={Styles.sessaoTres}>
+                <div>
+                    <span className={Styles.titulo}>Qual o tipo do seu espaço?</span>
 
-                <select className={Styles.select} onChange={(e) => handleChangeTipoEspaco(e)}>
-                    <option value='450'>Lugar inteiro</option>
-                    <option value='275'>Quarto inteiro</option>
-                    <option value='150'>Quarto compartilhado</option>
-                </select>
+                    <select className={Styles.select} onChange={(e) => handleChangeTipoEspaco(e)}>
+                        <option value='450'>Lugar inteiro</option>
+                        <option value='275'>Quarto inteiro</option>
+                        <option value='150'>Quarto compartilhado</option>
+                    </select>
+                </div>
+
+                <div>
+                    <span className={Styles.titulo}>Quantas pessoas podem se hospedar?</span>
+
+                    <select className={Styles.select} onChange={(e) => handleChangeHospedes(e)}>
+                        {listaHospedes.map((item, i) => (
+                            <option value={(i + 1)} key={i}>{item}</option>
+                        ))}
+                    </select>
+                </div>
+
+                <div>
+                    <span className={Styles.titulo}>Onde está localizado?</span>
+
+                    <select className={Styles.select} onChange={(e) => handleChangeLocalizado(e)}>
+                        <option value='1.2'>Lorena</option>
+                        <option value='1.4'>Guaratinguetá</option>
+                        <option value='2'>São José dos Campos</option>
+                        <option value='2.5'>São Paulo</option>
+                    </select>
+                </div>
+
+                <div>
+                    <span className={Styles.tituloInfo}>Ganhe até R${dinheiroTotal} por mês*</span>
+                    <span className={Styles.info} onClick={() => handleModalInfoPotencialGanho()}>Como estimamos seu potencial de ganho</span>
+                </div>
             </div>
-
-            <div>
-                <span className={Styles.titulo}>Quantas pessoas podem se hospedar?</span>
-
-                <select className={Styles.select} onChange={(e) => handleChangeHospedes(e)}>
-                    {listaHospedes.map((item, i) => (
-                        <option value={(i + 1)} key={i}>{item}</option>
-                    ))}
-                </select>
-            </div>
-
-            <div>
-                <span className={Styles.titulo}>Onde está localizado?</span>
-
-                <select className={Styles.select} onChange={(e) => handleChangeLocalizado(e)}>
-                    <option value='1.2'>Lorena</option>
-                    <option value='1.4'>Guaratinguetá</option>
-                    <option value='2'>São José dos Campos</option>
-                    <option value='2.5'>São Paulo</option>
-                </select>
-            </div>
-
-            <div>
-                <span className={Styles.tituloInfo}>Ganhe até R${dinheiroTotal} por mês*</span>
-                <Link href='/'><a className={Styles.info}>Como estimamos seu potencial de ganho</a></Link>
-            </div>
-        </div>
+        </React.Fragment>
     )
 }
