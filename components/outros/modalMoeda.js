@@ -27,7 +27,7 @@ export default function ModalMoeda(props) {
                     <BotaoFecharModal style={Styles} height='16px' width='16px' fecharModal={() => fecharModalClicandoNoBotao()} />
 
                     {/* <div className={Styles.cabecalhoTitulo}>
-                        <span>Título</span>
+                        <span>xxx</span>
                     </div> */}
                 </div>
                 <div className={Styles.divPrincipal}>

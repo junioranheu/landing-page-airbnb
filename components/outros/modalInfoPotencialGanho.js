@@ -18,8 +18,14 @@ export default function ModalInfoPotencialGanho(props) {
     return (
         <div className={Styles.fundo} onClick={(e) => fecharModalClicandoNoFundo(e)}>
             <div className={`${Styles.modal} animate__animated animate__fadeInUp animate__faster`}>
-                <BotaoFecharModal style={Styles} height='16px' width='16px' fecharModal={() => fecharModalClicandoNoBotao()} />
+                <div className={Styles.divCabecalho}>
+                    <BotaoFecharModal style={Styles} height='16px' width='16px' fecharModal={() => fecharModalClicandoNoBotao()} />
 
+                    {/* <div className={Styles.cabecalhoTitulo}>
+                        <span>xxx</span>
+                    </div> */}
+                </div>
+                
                 <div className={Styles.divPrincipal}>
                     <h2 className={Styles.titulo}>Como estimamos seu potencial de ganho</h2>
 
