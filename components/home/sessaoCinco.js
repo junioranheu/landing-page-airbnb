@@ -4,7 +4,7 @@ import StylesGeral from '../../styles/host.geral.module.css';
 import Styles from '../../styles/host.sessaoCinco.module.css';
 import BotaoPlay from '../svg/botaoPlay';
 
-export default function SessaoCinco() {
+export default function SessaoCinco(props) {
     const [isPlaying, setIsPlaying] = useState(true);
     const refVideo = useRef(null);
     function handleReproduzirVideo() {
@@ -45,7 +45,7 @@ export default function SessaoCinco() {
                     </span>
 
                     <div className={Styles.divBotao}>
-                        <input className={StylesGeral.botao} type='button' value='Vamos lá!' />
+                        <input className={StylesGeral.botao} type='button' value='Vamos lá!' onClick={props.handleModalCadastrar} />
                     </div>
                 </div>
             </div>

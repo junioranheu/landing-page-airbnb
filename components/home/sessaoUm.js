@@ -103,7 +103,7 @@ export default function SessaoUm(props) {
                     </span>
 
                     <div className={Styles.divBotao}>
-                        <input className={StylesGeral.botao} type='button' value='Experimente hospedar' />
+                        <input className={StylesGeral.botao} type='button' value='Experimente hospedar' onClick={props.handleModalCadastrar} />
                     </div>
                 </div>
 
