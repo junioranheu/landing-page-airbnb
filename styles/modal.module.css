@@ -29,6 +29,14 @@
     overflow-y: auto;
 }
 
+.modalGrande {
+    width: 60vw !important;
+}
+
+.modalPequeno {
+    width: 30vw !important;
+}
+
 .modal::-webkit-scrollbar {
     width: 0;
     background: transparent;
@@ -130,10 +138,6 @@
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=- Modal que tem itens =-=-=-=-=-=-=-=-=-=-=-=- */
-.modalGrande {
-    width: 60vw;
-}
-
 .itens {
     list-style: none;
     padding: 0px;

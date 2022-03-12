@@ -1,4 +1,6 @@
 import React from 'react';
+import StylesGeral from '../../styles/host.geral.module.css';
+import StylesCadastrar from '../../styles/modal.cadastrar.module.css';
 import Styles from '../../styles/modal.module.css';
 import BotaoFecharModal from '../svg/botaoFecharModal';
 
@@ -16,7 +18,7 @@ export default function ModalCadastrar(props) {
 
     return (
         <div className={Styles.fundo} onClick={(e) => fecharModalClicandoNoFundo(e)}>
-            <div className={`${Styles.modal} animate__animated animate__fadeInUp animate__faster`}>
+            <div className={`${Styles.modal} ${Styles.modalPequeno} animate__animated animate__fadeInUp animate__faster`}>
                 <div className={Styles.divCabecalho}>
                     <BotaoFecharModal style={Styles} height='16px' width='16px' fecharModal={() => fecharModalClicandoNoBotao()} />
 
@@ -25,13 +27,14 @@ export default function ModalCadastrar(props) {
                     </div>
                 </div>
 
-                <div className={Styles.divPrincipal}>
-                    <h2 className={Styles.titulo}>Escolha um idioma e uma região</h2>
+                <div className={StylesCadastrar.divPrincipal}>
+                    <span className={StylesCadastrar.titulo}>Bem-vindo ao Airbnb</span>
+                    <input />
+                    <input />
+                    <input className={StylesGeral.botao} type='button' value='Continuar' />
 
-                    <div className={Styles.conteudo}>
-                        <ul className={Styles.itens}>
-
-                        </ul>
+                    <div className={StylesCadastrar.divisorWrapper}>
+                        <div className={StylesCadastrar.divisor}>ou</div>
                     </div>
                 </div>
             </div>
