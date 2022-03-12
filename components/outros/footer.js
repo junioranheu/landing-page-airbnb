@@ -6,6 +6,7 @@ import Instagram from '../svg/instagram';
 import Terra from '../svg/terra';
 import Twitter from '../svg/twitter';
 import ModalIdioma from './modalIdioma';
+import ModalMoeda from './modalMoeda';
 import ModalWrapper from './modalWrapper';
 
 export default function Footer() {
@@ -20,11 +21,27 @@ export default function Footer() {
         setModalIdioma(!modalIdioma);
     }
 
+    const [moeda, setMoeda] = useState({ id: 1, moeda: 'Real', cifrao: 'R$', sigla: 'BRL' });
+    function handleSetMoeda(moeda) {
+        // console.log(moeda);
+        setMoeda(moeda);
+    }
+
+    const [modalMoeda, setModalMoeda] = useState(false);
+    function handleModalMoeda() {
+        setModalMoeda(!modalMoeda);
+    }
+
     return (
         <Fragment>
-            {/* Modal */}
+            {/* Modal de opções de idiomas e regiões */}
             <ModalWrapper isOpen={modalIdioma}>
                 <ModalIdioma handleModal={() => handleModalIdioma()} idiomaSelecionado={idioma} handleSetIdioma={handleSetIdioma} />
+            </ModalWrapper>
+
+           {/* Modal de opções de moedas */}
+           <ModalWrapper isOpen={modalMoeda}>
+                <ModalMoeda handleModal={() => handleModalMoeda()} idiomaSelecionado={moeda} handleSetIdioma={handleSetMoeda} />
             </ModalWrapper>
 
             {/* Conteúdo */}
@@ -122,8 +139,8 @@ export default function Footer() {
                                 {idioma.idioma} ({idioma.sigla})
                             </span>
 
-                            <span>
-                                R$ BRL
+                            <span className={Styles.opcao} onClick={() => handleModalMoeda()}>
+                                {moeda.cifrao} {moeda.sigla}
                             </span>
                         </div>
 

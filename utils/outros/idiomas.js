@@ -72,58 +72,58 @@ function idiomas() {
             id: 23, idioma: 'Español', regiao: 'Honduras', sigla: 'HO'
         },
         {
-            id: 25, idioma: 'Español', regiao: 'México', sigla: 'MX'
+            id: 24, idioma: 'Español', regiao: 'México', sigla: 'MX'
         },
         {
-            id: 26, idioma: 'Español', regiao: 'Nicaragua', sigla: 'NI'
+            id: 25, idioma: 'Español', regiao: 'Nicaragua', sigla: 'NI'
         },
         {
-            id: 27, idioma: 'Español', regiao: 'Panamá', sigla: 'PA'
+            id: 26, idioma: 'Español', regiao: 'Panamá', sigla: 'PA'
         },
         {
-            id: 28, idioma: 'Español', regiao: 'Paraguay', sigla: 'PY'
+            id: 27, idioma: 'Español', regiao: 'Paraguay', sigla: 'PY'
         },
         {
-            id: 29, idioma: 'Español', regiao: 'Perú', sigla: 'PE'
+            id: 28, idioma: 'Español', regiao: 'Perú', sigla: 'PE'
         },
         {
-            id: 30, idioma: 'Français', regiao: 'Belgique', sigla: 'BE'
+            id: 29, idioma: 'Français', regiao: 'Belgique', sigla: 'BE'
         },
         {
-            id: 31, idioma: 'Français', regiao: 'Canada', sigla: 'CA'
+            id: 30, idioma: 'Français', regiao: 'Canada', sigla: 'CA'
         },
         {
-            id: 32, idioma: 'Français', regiao: 'France', sigla: 'FR'
+            id: 31, idioma: 'Français', regiao: 'France', sigla: 'FR'
         },
         {
-            id: 33, idioma: 'Français', regiao: 'Suisse', sigla: 'SU'
+            id: 32, idioma: 'Français', regiao: 'Suisse', sigla: 'SU'
         },
         {
-            id: 34, idioma: 'Italiano', regiao: 'Italia', sigla: 'IT'
+            id: 33, idioma: 'Italiano', regiao: 'Italia', sigla: 'IT'
         },
         {
-            id: 35, idioma: 'Polski', regiao: 'Polska', sigla: 'PL'
+            id: 34, idioma: 'Polski', regiao: 'Polska', sigla: 'PL'
         },
         {
-            id: 36, idioma: 'Română', regiao: 'România', sigla: 'RO'
+            id: 35, idioma: 'Română', regiao: 'România', sigla: 'RO'
         },
         {
-            id: 37, idioma: 'Tagalog', regiao: 'Filipinas', sigla: 'PH'
+            id: 36, idioma: 'Tagalog', regiao: 'Filipinas', sigla: 'PH'
         },
         {
-            id: 38, idioma: 'Tiếng Việt', regiao: 'Việt Nam', sigla: 'VN'
+            id: 37, idioma: 'Tiếng Việt', regiao: 'Việt Nam', sigla: 'VN'
         },
         {
-            id: 39, idioma: 'Türkçe', regiao: 'Türkiye', sigla: 'TK'
+            id: 38, idioma: 'Türkçe', regiao: 'Türkiye', sigla: 'TK'
         },
         {
-            id: 40, idioma: 'Русский', regiao: 'Россия', sigla: 'RU'
+            id: 39, idioma: 'Русский', regiao: 'Россия', sigla: 'RU'
         },
         {
-            id: 41, idioma: '中国人', regiao: '中国', sigla: 'CN'
+            id: 40, idioma: '中国人', regiao: '中国', sigla: 'CN'
         },
         {
-            id: 42, idioma: '日本', regiao: '日本', sigla: 'JP'
+            id: 41, idioma: '日本', regiao: '日本', sigla: 'JP'
         }
     ]
 

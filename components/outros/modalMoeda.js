@@ -1,9 +1,9 @@
 import React from 'react';
 import Styles from '../../styles/modal.module.css';
-import Idiomas from '../../utils/outros/idiomas';
+import Moedas from '../../utils/outros/moedas';
 import BotaoFecharModal from '../svg/botaoFecharModal';
 
-export default function ModalIdioma(props) {
+export default function ModalMoeda(props) {
     function fecharModalClicandoNoBotao() {
         props.handleModal();
     }
@@ -30,11 +30,11 @@ export default function ModalIdioma(props) {
 
                     <div className={Styles.conteudo}>
                         <ul className={Styles.itens}>
-                            {Idiomas().map((item, i) => (
+                            {Moedas().map((item, i) => (
                                 <li className={Styles.itemLi} key={item.id} onClick={() => handleClick(item)}>
                                     <a className={`${Styles.itemA} ${(props.idiomaSelecionado.id === item.id ? Styles.itemASelecionado : '')}`}>
-                                        <div>{item.idioma}</div>
-                                        <div>{item.regiao}</div>
+                                        <div>{item.moeda}</div>
+                                        <div>{item.sigla} - {item.cifrao}</div>
                                     </a>
                                 </li>
                             ))}
