@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import Styles from '../../styles/host.sessaoTres.module.css';
 import ModalInfoPotencialGanho from '../outros/modalInfoPotencialGanho';
 import ModalWrapper from '../outros/modalWrapper';
@@ -35,7 +35,7 @@ export default function SessaoTres() {
     }
 
     return (
-        <React.Fragment>
+        <Fragment>
             {/* Modal */}
             <ModalWrapper isOpen={modalInfoPotencialGanhoOpen}>
                 <ModalInfoPotencialGanho handleModal={() => handleModalInfoPotencialGanho()} />
@@ -81,6 +81,6 @@ export default function SessaoTres() {
                     <span className={Styles.info} onClick={() => handleModalInfoPotencialGanho()}>Como estimamos seu potencial de ganho</span>
                 </div>
             </div>
-        </React.Fragment>
+        </Fragment>
     )
 }

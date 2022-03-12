@@ -20,7 +20,7 @@ export default function ModalInfoPotencialGanho(props) {
             <div className={`${Styles.modal} animate__animated animate__fadeInUp animate__faster`}>
                 <BotaoFecharModal style={Styles} height='16px' width='16px' fecharModal={() => fecharModalClicandoNoBotao()} />
 
-                <div>
+                <div className={Styles.divPrincipal}>
                     <h2 className={Styles.titulo}>Como estimamos seu potencial de ganho</h2>
 
                     <div className={Styles.conteudo}>

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { Fragment, useEffect, useRef } from 'react';
 import SessaoCinco from '../../components/home/sessaoCinco';
 import SessaoQuatro from '../../components/home/sessaoQuatro';
 import SessaoUm from '../../components/home/sessaoUm';
@@ -16,12 +16,12 @@ export default function Home() {
     }
 
     return (
-        <React.Fragment>
+        <Fragment>
             <SessaoUm handleBotaoSessaoDois={() => handleBotaoSessaoDois()} />
             <SessaoDois referencia={refSessaoDois} />
             <SessaoTres />
             <SessaoQuatro />
             <SessaoCinco />
-        </React.Fragment >
+        </Fragment >
     )
 }

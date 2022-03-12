@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 export default function BotaoPlay(props) {
     function handleReproduzirVideo() {
@@ -6,7 +6,7 @@ export default function BotaoPlay(props) {
     }
 
     return (
-        <React.Fragment>
+        <Fragment>
             {props.isPlaying ? (
                 <button onClick={() => handleReproduzirVideo()}
                     aria-label='Pausar o vídeo' type='button' className={props.style.botaoReproduzirVideo}>
@@ -22,6 +22,6 @@ export default function BotaoPlay(props) {
                     </svg>
                 </button>
             )}
-        </React.Fragment>
+        </Fragment>
     )
 }
