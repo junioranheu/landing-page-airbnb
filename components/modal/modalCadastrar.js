@@ -3,6 +3,7 @@ import React from 'react';
 import StylesGeral from '../../styles/host.geral.module.css';
 import StylesCadastrar from '../../styles/modal.cadastrar.module.css';
 import Styles from '../../styles/modal.module.css';
+import Idiomas from '../../utils/outros/idiomas';
 import BotaoFecharModal from '../svg/botaoFecharModal';
 
 export default function ModalCadastrar(props) {
@@ -34,7 +35,14 @@ export default function ModalCadastrar(props) {
                     <span className={StylesCadastrar.titulo}>Bem-vindo ao Airbnb</span>
 
                     <div className={StylesCadastrar.divInputs}>
-                        <input className={StylesCadastrar.input} placeholder='País/Região'/>
+                        <select className={StylesCadastrar.input}>
+                            <option value='0'>País/Região</option>
+
+                            {Idiomas().map((item, i) => (
+                                <option value={item.id}>{item.regiao} ({item.codigoTelefonico})</option>
+                            ))}
+                        </select>
+
                         <div className={StylesCadastrar.divisaoInput}></div>
                         <input className={StylesCadastrar.input} placeholder='Número de telefone' />
                     </div>
