@@ -7,7 +7,7 @@
 
     display: flex;
     flex-direction: column;
-}
+} 
 
 .titulo {
     font-size: 22px;
@@ -41,6 +41,14 @@
     font-weight: inherit;
     line-height: inherit;
     /* appearance: none; */
+}
+
+select.input:first-child {
+    color: grey;
+}
+
+select.input option:nth-child(n+2){
+    color: rgb(34, 34, 34);
 }
 
 .infoPequena {

@@ -36,7 +36,7 @@ export default function ModalCadastrar(props) {
 
                     <div className={StylesCadastrar.divInputs}>
                         <select className={StylesCadastrar.input}>
-                            <option value='0'>País/Região</option>
+                            <option value='0' disabled selected>País/Região</option>
 
                             {Idiomas().map((item, i) => (
                                 <option key={item.id} value={item.id}>{item.regiao} ({item.codigoTelefonico})</option>

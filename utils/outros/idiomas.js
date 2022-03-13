@@ -21,7 +21,7 @@ function idiomas() {
             id: 6, idioma: 'English', regiao: 'Canadá', sigla: 'CA', codigoTelefonico: '+1'
         },
         {
-            id: 7, idioma: 'English', regiao: 'índia', sigla: 'IN', codigoTelefonico: '+91'
+            id: 7, idioma: 'English', regiao: 'Índia', sigla: 'IN', codigoTelefonico: '+91'
         },
         {
             id: 8, idioma: 'English', regiao: 'Irlanda', sigla: 'IR', codigoTelefonico: '+353'
