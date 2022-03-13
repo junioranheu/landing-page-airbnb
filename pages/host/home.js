@@ -4,7 +4,7 @@ import SessaoQuatro from '../../components/home/sessaoQuatro';
 import SessaoUm from '../../components/home/sessaoUm';
 import SessaoDois from '../../components/home/sesssaoDois';
 import SessaoTres from '../../components/home/sesssaoTres';
-import ModalCadastrar from '../../components/outros/modalCadastrar';
+import ModalCadastrar from '../../components/modal/modalCadastrar';
 import ModalWrapper from '../../components/outros/modalWrapper';
 
 export default function Home() {

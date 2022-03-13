@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import React, { Fragment, useState } from 'react';
 import Styles from '../../styles/footer.module.css';
+import ModalIdioma from '../modal/modalIdioma';
+import ModalMoeda from '../modal/modalMoeda';
 import Facebook from '../svg/facebook';
 import Instagram from '../svg/instagram';
 import Terra from '../svg/terra';
 import Twitter from '../svg/twitter';
-import ModalIdioma from './modalIdioma';
-import ModalMoeda from './modalMoeda';
 import ModalWrapper from './modalWrapper';
 
 export default function Footer() {

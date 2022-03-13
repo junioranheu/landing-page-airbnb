@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import Styles from '../../styles/host.sessaoTres.module.css';
-import ModalInfoPotencialGanho from '../outros/modalInfoPotencialGanho';
+import ModalInfoPotencialGanho from '../modal/modalInfoPotencialGanho';
 import ModalWrapper from '../outros/modalWrapper';
 
 export default function SessaoTres() {
