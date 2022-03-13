@@ -31,7 +31,7 @@ export default function SessaoUm(props) {
         const maria = 5;
         const fimVideo = 7.5;
         let qtdLoopVideoAtual = 0;
-        const qtdMaxLoopVideo = 3;
+        const qtdMaxLoopVideo = 5;
 
         const intervalo = setInterval(() => {
             let tempo = refVideo.current.currentTime;

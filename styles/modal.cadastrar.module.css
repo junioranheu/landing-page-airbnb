@@ -13,7 +13,35 @@
     font-size: 22px;
     line-height: 30px;
     color: rgb(34, 34, 34);
-    font-weight: 500;
+    font-weight: 400;
+}
+
+.divInputs {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(202, 195, 195);
+    border-radius: 8px;
+}
+
+.divisaoInput{
+    border-bottom: 1px solid rgb(202, 195, 195);
+}
+
+.input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0px;
+    margin: 26px 12px 10px;
+    min-height: 1px;
+    color: inherit;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    appearance: none;
 }
 
 .infoPequena {
@@ -25,21 +53,20 @@
     margin-top: 16px;
 }
 
-
 .divBotao {
     display: flex;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 18px;
 }
 
-.divBotao input{
+.divBotao input, .divBotaoMidiasSociais input {
     width: 100vw;
 }
 
 .divisorWrapper {
     width: 100%;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    /* margin-top: 8px; */
+    /* margin-bottom: 8px; */
     font-weight: 100;
     font-size: 12px;
     line-height: 16px;
@@ -68,4 +95,52 @@
     height: 1px;
     background-color: rgb(221, 221, 221);
     margin-left: 16px;
+}
+
+.divBotaoMidiasSociais {
+    display: flex;
+    justify-content: center;
+}
+
+.botao {
+    color: rgb(34, 34, 34);
+    font-size: 15px;
+    font-weight: 100;
+    background: inherit;
+    border-width: 1px;
+    border-radius: 8px;
+    padding: 15px 30px 15px 30px;
+    cursor: pointer;
+
+    /* Ícone */
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+    background-size: 20px;
+}
+
+.botao:active {
+    /* background: #FF385C; */
+    transform: scale(0.95);
+    transition: transform 0.1s ease-in-out;
+}
+
+.divBotaoMidiasSociais:nth-child(n+2) {
+    margin-top: 14px;
+}
+
+.botao.iconeFacebook {
+    background-image: url(/static/svg/facebook.svg);
+}
+
+.botao.iconeGoogle {
+    background-image: url(/static/svg/google.svg);
+}
+
+.botao.iconeApple {
+    background-image: url(/static/svg/apple.svg);
+}
+
+.botao.iconeEmail {
+    background-image: url(/static/svg/email.svg);
 }

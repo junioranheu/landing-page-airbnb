@@ -32,8 +32,13 @@ export default function ModalCadastrar(props) {
 
                 <div className={StylesCadastrar.divPrincipal}>
                     <span className={StylesCadastrar.titulo}>Bem-vindo ao Airbnb</span>
-                    <input />
-                    <input />
+
+                    <div className={StylesCadastrar.divInputs}>
+                        <input className={StylesCadastrar.input} placeholder='País/Região'/>
+                        <div className={StylesCadastrar.divisaoInput}></div>
+                        <input className={StylesCadastrar.input} placeholder='Número de telefone' />
+                    </div>
+
                     <span className={StylesCadastrar.infoPequena}>
                         Ligaremos ou enviaremos uma mensagem para confirmar seu número. Podem ser aplicadas tarifas padrão de dados e mensagens.&nbsp;
                         <Link href='/'><a className='underline' target='_blank'>Política de Privacidade</a></Link>
@@ -45,6 +50,24 @@ export default function ModalCadastrar(props) {
 
                     <div className={StylesCadastrar.divisorWrapper}>
                         <div className={StylesCadastrar.divisor}>ou</div>
+                    </div>
+
+                    <div>
+                        <div className={StylesCadastrar.divBotaoMidiasSociais}>
+                            <input className={`${StylesCadastrar.botao} ${StylesCadastrar.iconeFacebook}`} type='button' value='Continuar com Facebook' />
+                        </div>
+
+                        <div className={StylesCadastrar.divBotaoMidiasSociais}>
+                            <input className={`${StylesCadastrar.botao} ${StylesCadastrar.iconeGoogle}`} type='button' value='Continuar com Google' />
+                        </div>
+
+                        <div className={StylesCadastrar.divBotaoMidiasSociais}>
+                            <input className={`${StylesCadastrar.botao} ${StylesCadastrar.iconeApple}`} type='button' value='Continuar com Apple' />
+                        </div>
+
+                        <div className={StylesCadastrar.divBotaoMidiasSociais}>
+                            <input className={`${StylesCadastrar.botao} ${StylesCadastrar.iconeEmail}`} type='button' value='Continuar com e-mail' />
+                        </div>
                     </div>
                 </div>
             </div>
