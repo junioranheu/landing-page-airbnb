@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import StylesGeral from '../../styles/host.geral.module.css';
 import StylesCadastrar from '../../styles/modal.cadastrar.module.css';
@@ -33,7 +34,14 @@ export default function ModalCadastrar(props) {
                     <span className={StylesCadastrar.titulo}>Bem-vindo ao Airbnb</span>
                     <input />
                     <input />
-                    <input className={StylesGeral.botao} type='button' value='Continuar' />
+                    <span className={StylesCadastrar.infoPequena}>
+                        Ligaremos ou enviaremos uma mensagem para confirmar seu número. Podem ser aplicadas tarifas padrão de dados e mensagens.&nbsp;
+                        <Link href='/'><a className='underline' target='_blank'>Política de Privacidade</a></Link>
+                    </span>
+
+                    <div className={StylesCadastrar.divBotao}>
+                        <input className={StylesGeral.botao} type='button' value='Continuar' />
+                    </div>
 
                     <div className={StylesCadastrar.divisorWrapper}>
                         <div className={StylesCadastrar.divisor}>ou</div>

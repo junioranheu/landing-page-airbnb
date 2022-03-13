@@ -80,9 +80,3 @@
     margin-left: 20px;
 }
 
-.opcao {
-    text-decoration: underline;
-    cursor: pointer;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 0.5px;
-}

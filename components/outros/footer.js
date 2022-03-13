@@ -139,11 +139,11 @@ export default function Footer() {
                         <div className={Styles.config}>
                             <Terra url={'/'} height='16px' width='16px' ariaLabel='' />
 
-                            <span className={Styles.opcao} onClick={() => handleModalIdioma()}>
+                            <span className='underline' onClick={() => handleModalIdioma()}>
                                 {idioma.idioma} ({idioma.sigla})
                             </span>
 
-                            <span className={Styles.opcao} onClick={() => handleModalMoeda()}>
+                            <span className='underline' onClick={() => handleModalMoeda()}>
                                 {moeda.cifrao} {moeda.sigla}
                             </span>
                         </div>
