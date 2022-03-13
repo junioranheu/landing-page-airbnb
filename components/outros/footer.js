@@ -35,14 +35,18 @@ export default function Footer() {
     return (
         <Fragment>
             {/* Modal de opções de idiomas e regiões */}
-            <ModalWrapper isOpen={modalIdioma}>
-                <ModalIdioma handleModal={() => handleModalIdioma()} idiomaSelecionado={idioma} handleSetIdioma={handleSetIdioma} />
-            </ModalWrapper>
+            {modalIdioma && (
+                <ModalWrapper isOpen={modalIdioma} key={1}>
+                    <ModalIdioma handleModal={() => handleModalIdioma()} idiomaSelecionado={idioma} handleSetIdioma={handleSetIdioma} />
+                </ModalWrapper>
+            )}
 
-           {/* Modal de opções de moedas */}
-           <ModalWrapper isOpen={modalMoeda}>
-                <ModalMoeda handleModal={() => handleModalMoeda()} idiomaSelecionado={moeda} handleSetIdioma={handleSetMoeda} />
-            </ModalWrapper>
+            {/* Modal de opções de moedas */}
+            {modalMoeda && (
+                <ModalWrapper isOpen={modalMoeda} key={2}>
+                    <ModalMoeda handleModal={() => handleModalMoeda()} moedaSelecionada={moeda} handleSetMoeda={handleSetMoeda} />
+                </ModalWrapper>
+            )}
 
             {/* Conteúdo */}
             <footer className={Styles.footer}>

@@ -7,11 +7,7 @@ export default function ModalWrapper({ children, isOpen }) {
     useEffect(() => {
         if (isOpen) {
             document.documentElement.style.setProperty('--overflow-y', 'hidden');
-        } else {
-            document.documentElement.style.setProperty('--overflow-y', 'auto');
-        }
-
-        // return () => setIsReady(false);
+        } 
     }, [children])
 
     return (isOpen ? createPortal(children, document.querySelector('#modalWrapper')) : null);

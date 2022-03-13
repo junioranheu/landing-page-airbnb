@@ -5,19 +5,21 @@ import BotaoFecharModal from '../svg/botaoFecharModal';
 
 export default function ModalMoeda(props) {
     function fecharModalClicandoNoBotao() {
+        document.documentElement.style.setProperty('--overflow-y', 'auto');
         props.handleModal();
     }
 
     function fecharModalClicandoNoFundo(e) {
         // console.log(e.target);
         if (e.target.className.toString().includes('fundo')) {
+            document.documentElement.style.setProperty('--overflow-y', 'auto');
             props.handleModal();
         }
     }
 
     function handleClick(item) {
         // console.log(item);
-        props.handleSetIdioma(item);
+        props.handleSetMoeda(item);
     }
 
     return (
@@ -31,13 +33,13 @@ export default function ModalMoeda(props) {
                     </div> */}
                 </div>
                 <div className={Styles.divPrincipal}>
-                    <h2 className={Styles.titulo}>Escolha um idioma e uma região</h2>
+                    <h2 className={Styles.titulo}>Escolha uma moeda</h2>
 
                     <div className={Styles.conteudo}>
                         <ul className={Styles.itens}>
                             {Moedas().map((item, i) => (
                                 <li className={Styles.itemLi} key={item.id} onClick={() => handleClick(item)}>
-                                    <a className={`${Styles.itemA} ${(props.idiomaSelecionado.id === item.id ? Styles.itemASelecionado : '')}`}>
+                                    <a className={`${Styles.itemA} ${(props.moedaSelecionada.id === item.id ? Styles.itemASelecionado : '')}`}>
                                         <div>{item.moeda}</div>
                                         <div>{item.sigla} - {item.cifrao}</div>
                                     </a>

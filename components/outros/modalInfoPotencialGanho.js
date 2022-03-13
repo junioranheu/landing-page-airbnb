@@ -5,12 +5,14 @@ import BotaoFecharModal from '../svg/botaoFecharModal';
 
 export default function ModalInfoPotencialGanho(props) {
     function fecharModalClicandoNoBotao() {
+        document.documentElement.style.setProperty('--overflow-y', 'auto');
         props.handleModal();
     }
 
     function fecharModalClicandoNoFundo(e) {
         // console.log(e.target);
         if (e.target.className.toString().includes('fundo')) {
+            document.documentElement.style.setProperty('--overflow-y', 'auto');
             props.handleModal();
         }
     }
