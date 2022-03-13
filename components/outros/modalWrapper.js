@@ -8,7 +8,7 @@ export default function ModalWrapper({ children, isOpen }) {
         if (isOpen) {
             document.documentElement.style.setProperty('--overflow-y', 'hidden');
         } 
-    }, [children])
+    }, [children, isOpen])
 
     return (isOpen ? createPortal(children, document.querySelector('#modalWrapper')) : null);
 }
