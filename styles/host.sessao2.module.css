@@ -1,8 +1,8 @@
 /* =-=-=-=-=-=-=-=-=-=-=-=- Sessão dois =-=-=-=-=-=-=-=-=-=-=-=- */
 .sessaoDois {
-    background-color: plum;
+    /* background-color: plum; */
     width: 100vw;
-    height: 100vh;
+    height: 140vh;
 
     display: flex;
     justify-content: center;
@@ -19,4 +19,42 @@
 .tituloPrincipal span {
     display: block;
     margin-top: -0.2em;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=- Carousel =-=-=-=-=-=-=-=-=-=-=-=- */
+.carousel {
+    /* background-color: pink; */
+    margin-top: 4vw;
+    width: 85vw;
+}
+
+.imgAnfitriao {
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.divDescricao {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 1vw;
+    gap: 1.5vw;
+}
+
+.descricao {
+    /* background-color: blue; */
+    width: 90%;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 100;
+    text-align: left;
+}
+
+.info {
+    color: #717171;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 100;
+    text-align: left;
 }
