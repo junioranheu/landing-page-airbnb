@@ -14,7 +14,8 @@ export default function ModalCadastrar(props) {
     }
 
     function fecharModalClicandoNoFundo(e) {
-        // console.log(e.target);
+        // console.log(e.target.className);
+
         if (e.target.className.toString().includes('fundo')) {
             document.documentElement.style.setProperty('--overflow-y', 'auto');
             props.handleModal();
@@ -28,26 +29,23 @@ export default function ModalCadastrar(props) {
         });
     };
 
-    const [divInputsErro, setDivInputsErro] = useState(false);
+    const [divInputsErro, setDivInputsErro] = useState('');
     function handleContinuar() {
         // console.log(formData);
-        setDivInputsErro(false);
+        setDivInputsErro('');
 
         if (!formData) {
-            console.log('preencha os campos');
-            setDivInputsErro(true);
+            setDivInputsErro('O país/região e o número de telefone são obrigatórios.');
             return false;
         }
 
         if (!formData.codigoTelefone) {
-            console.log('codigoTelone');
-            setDivInputsErro(true);
+            setDivInputsErro('O país/região é obrigatório.');
             return false;
         }
 
         if (!formData.numeroTelefone) {
-            console.log('numeroTelefone');
-            setDivInputsErro(true);
+            setDivInputsErro('O número de telefone é obrigatório.');
             return false;
         }
 
@@ -55,7 +53,7 @@ export default function ModalCadastrar(props) {
     }
 
     return (
-        <div className={Styles.fundo} onClick={(e) => fecharModalClicandoNoFundo(e)}>
+        <div className={Styles.fundo} onMouseDown={(e) => fecharModalClicandoNoFundo(e)}>
             <div className={`${Styles.modal} ${Styles.modalPequeno} animate__animated animate__fadeInUp animate__faster`}>
                 <div className={Styles.divCabecalho}>
                     <BotaoFecharModal style={Styles} height='16px' width='16px' fecharModal={() => fecharModalClicandoNoBotao()} />
@@ -84,7 +82,7 @@ export default function ModalCadastrar(props) {
                     {divInputsErro && (
                         <div className={StylesCadastrar.mensagemErro}>
                             <IconeErro height='16px' width='16px' />
-                            <span>&nbsp;O número de telefone é obrigatório.</span>
+                            <span>&nbsp;{divInputsErro}</span>
                         </div>
                     )}
 

@@ -18,7 +18,7 @@ export default function ModalInfoPotencialGanho(props) {
     }
 
     return (
-        <div className={Styles.fundo} onClick={(e) => fecharModalClicandoNoFundo(e)}>
+        <div className={Styles.fundo} onMouseDown={(e) => fecharModalClicandoNoFundo(e)}>
             <div className={`${Styles.modal} animate__animated animate__fadeInUp animate__faster`}>
                 <div className={Styles.divCabecalho}>
                     <BotaoFecharModal style={Styles} height='16px' width='16px' fecharModal={() => fecharModalClicandoNoBotao()} />
