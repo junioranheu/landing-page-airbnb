@@ -1,10 +1,10 @@
 import React, { Fragment, useEffect, useRef, useState } from 'react';
 import Navbar from '../../components/home/outros/navbar';
-import SessaoCinco from '../../components/home/sessaoCinco';
-import SessaoDois from '../../components/home/sessaoDois';
-import SessaoQuatro from '../../components/home/sessaoQuatro';
-import SessaoTres from '../../components/home/sessaoTres';
-import SessaoUm from '../../components/home/sessaoUm';
+import SessaoUm from '../../components/home/sessao1';
+import SessaoDois from '../../components/home/sessao2';
+import SessaoTres from '../../components/home/sessao3';
+import SessaoQuatro from '../../components/home/sessao4';
+import SessaoCinco from '../../components/home/sessao5';
 import ModalCadastrar from '../../components/modal/modalCadastrar';
 import ModalWrapper from '../../components/outros/modalWrapper';
 
