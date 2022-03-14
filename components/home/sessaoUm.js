@@ -34,7 +34,7 @@ export default function SessaoUm(props) {
         const qtdMaxLoopVideo = 5;
 
         const intervalo = setInterval(() => {
-            let tempo = refVideo.current.currentTime;
+            const tempo = refVideo.current.currentTime;
             // console.log(tempo);
 
             // Definir o tempo das mudanças com base no tempo atual do vídeo;
@@ -63,7 +63,7 @@ export default function SessaoUm(props) {
             // Fim do vídeo;
             if (tempo >= fimVideo) {
                 qtdLoopVideoAtual++;
-                // console.log('Completou +1 loop: ' + qtdLoopVideoAtual);
+                // console.log(`Loop ${qtdLoopVideoAtual} feito, faltam ${(qtdMaxLoopVideo - qtdLoopVideoAtual)}`);
 
                 // Se o vídeo rodar duas vezes;
                 if (qtdLoopVideoAtual === qtdMaxLoopVideo) {
