@@ -3,4 +3,20 @@
     background-color: plum;
     width: 100vw;
     height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloPrincipal {
+    text-align: center;
+    color: #000;
+    font-size: 65px;
+    font-weight: 500;
+}
+
+.tituloPrincipal span {
+    display: block;
+    margin-top: -0.2em;
 }
