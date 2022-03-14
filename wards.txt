@@ -1,2 +1,5 @@
 https://www.airbnb.com.br/host/homes
 https://www.airbnb.com.br/
+
+NAO DEIXAR O USUARIO "PEGAR" OS CARDS DO CAROUSEL
+FAZER O MODAL IR PRA FRENTE DA NAVBAR
