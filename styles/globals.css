@@ -73,3 +73,7 @@ a {
   -ms-user-select: none;
   user-select: none
 }
+
+.swiper-button-next, .swiper-button-prev{
+  color: rgba(255, 56, 92, 1) !important;
+}

@@ -1,4 +1,6 @@
+import { Navigation } from 'swiper';
 import 'swiper/css';
+import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ImgAnfitriao4 from '../../static/images/anfitrioes/clair.webp';
 import ImgAssinatura4 from '../../static/images/anfitrioes/clairAssinatura.webp';
@@ -22,7 +24,11 @@ export default function SessaoDois(props) {
                 <span>Você pode hospedar</span>
                 <span>onde quiser, quando quiser</span>
 
-                <Swiper className={Styles.carousel} spaceBetween={50} slidesPerView={3}>
+                <Swiper className={Styles.carousel}
+                    spaceBetween={50} slidesPerView={3}
+                    modules={[Navigation]}
+                    navigation
+                >
                     <SwiperSlide>
                         <Slide
                             style={Styles}
