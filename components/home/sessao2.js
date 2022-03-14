@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ImgAnfitriao4 from '../../static/images/anfitrioes/clair.webp';
@@ -14,6 +13,7 @@ import ImgAssinatura3 from '../../static/images/anfitrioes/nerinaAssinatura.webp
 import ImgAnfitriao1 from '../../static/images/anfitrioes/reka.webp';
 import ImgAssinatura1 from '../../static/images/anfitrioes/rekaAssinatura.webp';
 import Styles from '../../styles/host.sessao2.module.css';
+import Slide from './outros/slide';
 
 export default function SessaoDois(props) {
     return (
@@ -24,87 +24,87 @@ export default function SessaoDois(props) {
 
                 <Swiper className={Styles.carousel} spaceBetween={50} slidesPerView={3}>
                     <SwiperSlide>
-                        <Image src={ImgAnfitriao1} alt='' width={500} height={500} className={Styles.imgAnfitriao} />
-
-                        <div className={Styles.divDescricao}>
-                            <span className={Styles.descricao}>Compartilhar meu estúdio mudou minha vida, me presenteou com experiências inesquecíveis e me permitiu conhecer pessoas incríveis.</span>
-
-                            <div className={Styles.assinaturaAnfitriao}>
-                                <Image src={ImgAssinatura1} alt='' width={59} height={32} />
-                            </div>
-
-                            <span className={Styles.info}>Anfitriã em Milão</span>
-                        </div>
+                        <Slide
+                            style={Styles}
+                            imgAnfitriao={ImgAnfitriao1}
+                            imgAnfitriaoWidth={500}
+                            imgAnfitriaoHeight={500}
+                            descricao={'Compartilhar meu estúdio mudou minha vida, me presenteou com experiências inesquecíveis e me permitiu conhecer pessoas incríveis.'}
+                            imgAssinatura={ImgAssinatura1}
+                            imgAssinaturaWidth={59}
+                            imgAssinaturaHeight={32}
+                            info={'Anfitriã em Milão'}
+                        />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <Image src={ImgAnfitriao2} alt='' width={500} height={500} className={Styles.imgAnfitriao} />
-
-                        <div className={Styles.divDescricao}>
-                            <span className={Styles.descricao}>Anunciar minha acomodação no Airbnb me permitiu traçar um caminho para a liberdade financeira.</span>
-
-                            <div className={Styles.assinaturaAnfitriao}>
-                                <Image src={ImgAssinatura2} alt='' width={100} height={32} />
-                            </div>
-
-                            <span className={Styles.info}>Anfitriã em Atlanta</span>
-                        </div>
+                        <Slide
+                            style={Styles}
+                            imgAnfitriao={ImgAnfitriao2}
+                            imgAnfitriaoWidth={500}
+                            imgAnfitriaoHeight={500}
+                            descricao={'Anunciar minha acomodação no Airbnb me permitiu traçar um caminho para a liberdade financeira.'}
+                            imgAssinatura={ImgAssinatura2}
+                            imgAssinaturaWidth={100}
+                            imgAssinaturaHeight={32}
+                            info={'Anfitriã em Atlanta'}
+                        />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <Image src={ImgAnfitriao3} alt='' width={500} height={500} className={Styles.imgAnfitriao} />
-
-                        <div className={Styles.divDescricao}>
-                            <span className={Styles.descricao}>Conseguimos manter nossa cultura viva ao oferecer nossa experiência de produção de massas.</span>
-
-                            <div className={Styles.assinaturaAnfitriao}>
-                                <Image src={ImgAssinatura3} alt='' width={90} height={32} />
-                            </div>
-
-                            <span className={Styles.info}>Anfitriã em Palombara Sabina</span>
-                        </div>
+                        <Slide
+                            style={Styles}
+                            imgAnfitriao={ImgAnfitriao3}
+                            imgAnfitriaoWidth={500}
+                            imgAnfitriaoHeight={500}
+                            descricao={'Conseguimos manter nossa cultura viva ao oferecer nossa experiência de produção de massas.'}
+                            imgAssinatura={ImgAssinatura3}
+                            imgAssinaturaWidth={90}
+                            imgAssinaturaHeight={32}
+                            info={'Anfitriã em Palombara Sabina'}
+                        />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <Image src={ImgAnfitriao4} alt='' width={500} height={500} className={Styles.imgAnfitriao} />
-
-                        <div className={Styles.divDescricao}>
-                            <span className={Styles.descricao}>O Airbnb me possibilitou trabalhar de forma independente fazendo algo que amo — cuidar dos hóspedes em nossa casa.</span>
-
-                            <div className={Styles.assinaturaAnfitriao}>
-                                <Image src={ImgAssinatura4} alt='' width={59} height={32} />
-                            </div>
-
-                            <span className={Styles.info}>Anfitriã em Chiang Mai</span>
-                        </div>
+                        <Slide
+                            style={Styles}
+                            imgAnfitriao={ImgAnfitriao4}
+                            imgAnfitriaoWidth={500}
+                            imgAnfitriaoHeight={500}
+                            descricao={'O Airbnb me possibilitou trabalhar de forma independente fazendo algo que amo — cuidar dos hóspedes em nossa casa.'}
+                            imgAssinatura={ImgAssinatura4}
+                            imgAssinaturaWidth={59}
+                            imgAssinaturaHeight={32}
+                            info={'Anfitriã em Chiang Mai'}
+                        />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <Image src={ImgAnfitriao5} alt='' width={500} height={500} className={Styles.imgAnfitriao} />
-
-                        <div className={Styles.divDescricao}>
-                            <span className={Styles.descricao}>Hospedar em minha tenda beduína me permitiu conhecer pessoas do mundo todo.</span>
-
-                            <div className={Styles.assinaturaAnfitriao}>
-                                <Image src={ImgAssinatura5} alt='' width={128} height={32} />
-                            </div>
-
-                            <span className={Styles.info}>Anfitriã em Wadi Rum</span>
-                        </div>
+                        <Slide
+                            style={Styles}
+                            imgAnfitriao={ImgAnfitriao5}
+                            imgAnfitriaoWidth={500}
+                            imgAnfitriaoHeight={500}
+                            descricao={'Hospedar em minha tenda beduína me permitiu conhecer pessoas do mundo todo.'}
+                            imgAssinatura={ImgAssinatura5}
+                            imgAssinaturaWidth={128}
+                            imgAssinaturaHeight={32}
+                            info={'Anfitriã em Wadi Rum'}
+                        />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <Image src={ImgAnfitriao6} alt='' width={500} height={500} className={Styles.imgAnfitriao} />
-
-                        <div className={Styles.divDescricao}>
-                            <span className={Styles.descricao}>Adoro hospedar em minha casa ecológica e assim promover a conexão das pessoas com a natureza e entre si.</span>
-
-                            <div className={Styles.assinaturaAnfitriao}>
-                                <Image src={ImgAssinatura6} alt='' width={128} height={32} />
-                            </div>
-
-                            <span className={Styles.info}>Anfitriã em Paraty</span>
-                        </div>
+                        <Slide
+                            style={Styles}
+                            imgAnfitriao={ImgAnfitriao6}
+                            imgAnfitriaoWidth={500}
+                            imgAnfitriaoHeight={500}
+                            descricao={'Adoro hospedar em minha casa ecológica e assim promover a conexão das pessoas com a natureza e entre si.'}
+                            imgAssinatura={ImgAssinatura6}
+                            imgAssinaturaWidth={128}
+                            imgAssinaturaHeight={32}
+                            info={'Anfitriã em Paraty'}
+                        />
                     </SwiperSlide>
                 </Swiper>
             </div>
