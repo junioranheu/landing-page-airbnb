@@ -9,7 +9,7 @@ export default function Teste({ estados }) {
         <div>
             <ul>
                 {estados.map((e) => (
-                    <li>{e.nome}</li>
+                    <li key={e.estadoId}>{e.nome}</li>
                 ))}
             </ul>
         </div>
