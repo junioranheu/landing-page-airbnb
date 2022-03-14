@@ -60,3 +60,16 @@ a {
   text-underline-offset: 3px;
   text-decoration-thickness: 0.5px;
 }
+
+.semDrag {
+  pointer-events: none;
+}
+
+.semHighlight {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
