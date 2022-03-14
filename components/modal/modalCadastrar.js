@@ -1,10 +1,11 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import StylesGeral from '../../styles/host.geral.module.css';
 import StylesCadastrar from '../../styles/modal.cadastrar.module.css';
 import Styles from '../../styles/modal.module.css';
 import Idiomas from '../../utils/outros/idiomas';
 import BotaoFecharModal from '../svg/botaoFecharModal';
+import IconeErro from '../svg/erro';
 
 export default function ModalCadastrar(props) {
     function fecharModalClicandoNoBotao() {
@@ -17,6 +18,37 @@ export default function ModalCadastrar(props) {
         if (e.target.className.toString().includes('fundo')) {
             document.documentElement.style.setProperty('--overflow-y', 'auto');
             props.handleModal();
+        }
+    }
+
+    const [formData, setFormData] = useState();
+    function handleChange(e) {
+        setFormData({
+            ...formData, [e.target.name]: e.target.value
+        });
+    };
+
+    const [divInputsErro, setDivInputsErro] = useState(false);
+    function handleContinuar() {
+        // console.log(formData);
+        setDivInputsErro(false);
+
+        if (!formData) {
+            console.log('preencha os campos');
+            setDivInputsErro(true);
+            return false;
+        }
+
+        if (!formData.codigoTelefone) {
+            console.log('codigoTelone');
+            setDivInputsErro(true);
+            return false;
+        }
+
+        if (!formData.numeroTelefone) {
+            console.log('numeroTelefone');
+            setDivInputsErro(true);
+            return false;
         }
     }
 
@@ -34,17 +66,27 @@ export default function ModalCadastrar(props) {
                 <div className={StylesCadastrar.divPrincipal}>
                     <span className={StylesCadastrar.titulo}>Bem-vindo ao Airbnb</span>
 
-                    <div className={StylesCadastrar.divInputs}>
-                        <select className={StylesCadastrar.input}>
-                            <option value='0' disabled selected>País/Região</option>
+                    <div className={`${StylesCadastrar.divInputs} ${(divInputsErro ? StylesCadastrar.divInputsErro : '')} `}>
+                        <select className={StylesCadastrar.input} defaultValue={0} name='codigoTelefone' onChange={handleChange} >
+                            <option value={0} disabled>País/Região</option>
 
-                            {Idiomas().map((item, i) => (
+                            {Idiomas('regiao').map((item, i) => (
                                 <option key={item.id} value={item.id}>{item.regiao} ({item.codigoTelefonico})</option>
                             ))}
                         </select>
 
-                        <div className={StylesCadastrar.divisaoInput}></div>
-                        <input className={StylesCadastrar.input} placeholder='Número de telefone' />
+                        <div className={`${StylesCadastrar.divisaoInput} ${(divInputsErro ? StylesCadastrar.divisaoInputErro : '')}`}></div>
+                        <input className={StylesCadastrar.input} placeholder='Número de telefone' name='numeroTelefone' onChange={handleChange} />
+                    </div>
+
+                    <div class="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">
+                        <div class="xxxxxxxxxxxxxxxxxxxxxxxxxxx">
+                            <span>
+                                <IconeErro height='16px' width='16px' />
+                            </span>
+
+                            O número de telefone é obrigatório.
+                        </div>
                     </div>
 
                     <span className={StylesCadastrar.infoPequena}>
@@ -53,7 +95,7 @@ export default function ModalCadastrar(props) {
                     </span>
 
                     <div className={StylesCadastrar.divBotao}>
-                        <input className={StylesGeral.botao} type='button' value='Continuar' />
+                        <input className={StylesGeral.botao} type='button' value='Continuar' onClick={() => handleContinuar()} />
                     </div>
 
                     <div className={StylesCadastrar.divisorWrapper}>

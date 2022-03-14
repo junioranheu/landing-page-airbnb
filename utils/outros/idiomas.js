@@ -1,5 +1,5 @@
 
-function idiomas() {
+function idiomas(ordernaPor) {
     // Lista de idiomas;
     const idiomas = [
         {
@@ -21,7 +21,7 @@ function idiomas() {
             id: 6, idioma: 'English', regiao: 'Canadá', sigla: 'CA', codigoTelefonico: '+1'
         },
         {
-            id: 7, idioma: 'English', regiao: 'Índia', sigla: 'IN', codigoTelefonico: '+91'
+            id: 7, idioma: 'English', regiao: 'India', sigla: 'IN', codigoTelefonico: '+91'
         },
         {
             id: 8, idioma: 'English', regiao: 'Irlanda', sigla: 'IR', codigoTelefonico: '+353'
@@ -126,8 +126,13 @@ function idiomas() {
 
     // Ordenar alfabeticamente - https://stackoverflow.com/questions/19259233/sorting-json-by-specific-element-alphabetically;
     const idiomasOrdenados = idiomas.sort(function (a, b) {
-        a = a.idioma.toLowerCase();
-        b = b.idioma.toLowerCase();
+        if (ordernaPor === 'idioma'){
+            a = a.idioma.toLowerCase();
+            b = b.idioma.toLowerCase();
+        } else if (ordernaPor === 'regiao'){
+            a = a.regiao.toLowerCase();
+            b = b.regiao.toLowerCase();
+        }
 
         return a < b ? -1 : a > b ? 1 : 0;
     });

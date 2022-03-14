@@ -38,7 +38,7 @@ export default function ModalIdioma(props) {
 
                     <div className={Styles.conteudo}>
                         <ul className={Styles.itens}>
-                            {Idiomas().map((item, i) => (
+                            {Idiomas('idioma').map((item, i) => (
                                 <li className={Styles.itemLi} key={item.id} onClick={() => handleClick(item)}>
                                     <a className={`${Styles.itemA} ${(props.idiomaSelecionado.id === item.id ? Styles.itemASelecionado : '')}`}>
                                         <div>{item.idioma}</div>

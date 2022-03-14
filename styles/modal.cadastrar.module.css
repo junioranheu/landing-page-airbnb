@@ -7,7 +7,7 @@
 
     display: flex;
     flex-direction: column;
-} 
+}
 
 .titulo {
     font-size: 22px;
@@ -24,8 +24,16 @@
     border-radius: 8px;
 }
 
-.divisaoInput{
+.divisaoInput {
     border-bottom: 1px solid rgb(202, 195, 195);
+}
+
+.divInputsErro {
+    border: 2px solid red;
+}
+
+.divisaoInputErro {
+    border-bottom: 2px solid red;
 }
 
 .input {
@@ -47,7 +55,7 @@ select.input:first-child {
     color: grey;
 }
 
-select.input option:nth-child(n+2){
+select.input option:nth-child(n+2) {
     color: rgb(34, 34, 34);
 }
 
