@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import VideoUm from '../../static/videos/videoUm.webm';
 import StylesGeral from '../../styles/host.geral.module.css';
-import Styles from '../../styles/host.sessaoUm.module.css';
+import Styles from '../../styles/host.sessao1.module.css';
 import BotaoPlay from '../svg/botaoPlay';
 import Logo from '../svg/logo';
 import Anfitriao from './outros/anfitriao';

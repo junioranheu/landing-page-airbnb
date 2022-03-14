@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import VideoDois from '../../static/videos/videoDois.webm';
 import StylesGeral from '../../styles/host.geral.module.css';
-import Styles from '../../styles/host.sessaoCinco.module.css';
+import Styles from '../../styles/host.sessao5.module.css';
 import BotaoPlay from '../svg/botaoPlay';
 
 export default function SessaoCinco(props) {

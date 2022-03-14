@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import Styles from '../../styles/host.sessaoTres.module.css';
+import Styles from '../../styles/host.sessao3.module.css';
 import Cidades from '../../utils/outros/cidadesValeParaiba';
 import ModalInfoPotencialGanho from '../modal/modalInfoPotencialGanho';
 import ModalWrapper from '../outros/modalWrapper';

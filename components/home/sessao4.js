@@ -1,4 +1,4 @@
-import Styles from '../../styles/host.sessaoQuatro.module.css';
+import Styles from '../../styles/host.sessao4.module.css';
 
 export default function SessaoQuatro() {
     return (
