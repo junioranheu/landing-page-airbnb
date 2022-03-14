@@ -51,7 +51,7 @@ export default function Home() {
     return (
         <Fragment>
             {/* Navbar */}
-            {mostrarNavbar && (<Navbar />)}
+            {mostrarNavbar && (<Navbar handleModalCadastrar={() => handleModalCadastrar()} />)}
 
             {/* Sessões */}
             <SessaoUm handleBotaoSessaoDois={() => handleBotaoSessaoDois()} handleModalCadastrar={() => handleModalCadastrar()} />
