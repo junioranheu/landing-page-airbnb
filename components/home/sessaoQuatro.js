@@ -14,7 +14,7 @@ export default function SessaoQuatro() {
                     </span>
 
                     <div className={Styles.divBotao}>
-                        <input className={Styles.botao} type='button' value='Saiba mais' />
+                        <input className={Styles.botao} type='button' value='Saiba mais' onClick={() => { window.open('/', '_blank') }} />
                     </div>
                 </div>
             </div>
@@ -22,7 +22,7 @@ export default function SessaoQuatro() {
             <div className={Styles.divPrincipal}>
                 <div className={Styles.cardDois}>
                     <span>
-                        <span className={Styles.aircoverUm}>air</span>      
+                        <span className={Styles.aircoverUm}>air</span>
                         <span className={Styles.aircoverDois}>cover</span>
                     </span>
 
@@ -35,7 +35,7 @@ export default function SessaoQuatro() {
                     </span>
 
                     <div className={Styles.divBotao}>
-                        <input className={Styles.botao} type='button' value='Conheça o AirCover' />
+                        <input className={Styles.botao} type='button' value='Conheça o AirCover' onClick={() => { window.open('/', '_blank') }} />
                     </div>
                 </div>
             </div>
