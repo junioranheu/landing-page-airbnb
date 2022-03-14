@@ -50,6 +50,8 @@ export default function ModalCadastrar(props) {
             setDivInputsErro(true);
             return false;
         }
+
+        alert('Cadastro não desenvolvido 🥲');
     }
 
     return (
@@ -79,15 +81,12 @@ export default function ModalCadastrar(props) {
                         <input className={StylesCadastrar.input} placeholder='Número de telefone' name='numeroTelefone' onChange={handleChange} />
                     </div>
 
-                    <div class="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">
-                        <div class="xxxxxxxxxxxxxxxxxxxxxxxxxxx">
-                            <span>
-                                <IconeErro height='16px' width='16px' />
-                            </span>
-
-                            O número de telefone é obrigatório.
+                    {divInputsErro && (
+                        <div className={StylesCadastrar.mensagemErro}>
+                            <IconeErro height='16px' width='16px' />
+                            <span>&nbsp;O número de telefone é obrigatório.</span>
                         </div>
-                    </div>
+                    )}
 
                     <span className={StylesCadastrar.infoPequena}>
                         Ligaremos ou enviaremos uma mensagem para confirmar seu número. Podem ser aplicadas tarifas padrão de dados e mensagens.&nbsp;
