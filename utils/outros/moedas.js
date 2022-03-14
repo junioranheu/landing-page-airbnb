@@ -1,4 +1,3 @@
-
 function moedas() {
     // Lista de moedas;
     const moedas = [
@@ -80,14 +79,14 @@ function moedas() {
     ]
 
     // Ordenar alfabeticamente - https://stackoverflow.com/questions/19259233/sorting-json-by-specific-element-alphabetically;
-    const idiomasOrdenados = moedas.sort(function (a, b) {
+    const ordenado = moedas.sort(function (a, b) {
         a = a.moeda.toLowerCase();
         b = b.moeda.toLowerCase();
 
         return a < b ? -1 : a > b ? 1 : 0;
     });
 
-    return idiomasOrdenados;
+    return ordenado;
 }
 
 export default moedas;

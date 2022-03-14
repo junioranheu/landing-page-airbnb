@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import Styles from '../../styles/host.sessaoTres.module.css';
+import Cidades from '../../utils/outros/cidadesValeParaiba';
 import ModalInfoPotencialGanho from '../modal/modalInfoPotencialGanho';
 import ModalWrapper from '../outros/modalWrapper';
 
@@ -9,7 +10,7 @@ export default function SessaoTres() {
         setTipoEspaco(e.target.value);
     }
 
-    const listaHospedes = ['1 hóspede', '2 hóspedes', '3 hóspedes', '4 hóspedes', '5 hóspedes', '6 hóspedes', '7 hóspedes'];
+    const listaHospedes = ['1 hóspede', '2 hóspedes', '3 hóspedes', '4 hóspedes', '5 hóspedes', '6 hóspedes', '7 hóspedes', 'Mais que 7'];
     const [qtdHospedes, setQtdHospedes] = useState(1);
     function handleChangeHospedes(e) {
         setQtdHospedes(e.target.value);
@@ -67,12 +68,11 @@ export default function SessaoTres() {
                     <span className={Styles.titulo}>Onde está localizado?</span>
 
                     <div className={Styles.selectWrapper}>
-                    <select className={Styles.select} onChange={(e) => handleChangeLocalizado(e)}>
-                        <option value='1.2'>Lorena</option>
-                        <option value='1.4'>Guaratinguetá</option>
-                        <option value='2'>São José dos Campos</option>
-                        <option value='2.5'>São Paulo</option>
-                    </select>
+                        <select className={Styles.select} onChange={(e) => handleChangeLocalizado(e)}>
+                            {Cidades().map((item, i) => (
+                                <option key={item.id} value={item.multiplicador}>{item.nome}</option>
+                            ))}
+                        </select>
                     </div>
                 </div>
 

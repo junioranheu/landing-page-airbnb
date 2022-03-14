@@ -1,4 +1,3 @@
-
 function idiomas(ordernaPor) {
     // Lista de idiomas;
     const idiomas = [
@@ -125,7 +124,7 @@ function idiomas(ordernaPor) {
     ]
 
     // Ordenar alfabeticamente - https://stackoverflow.com/questions/19259233/sorting-json-by-specific-element-alphabetically;
-    const idiomasOrdenados = idiomas.sort(function (a, b) {
+    const ordenado = idiomas.sort(function (a, b) {
         if (ordernaPor === 'idioma'){
             a = a.idioma.toLowerCase();
             b = b.idioma.toLowerCase();
@@ -137,7 +136,7 @@ function idiomas(ordernaPor) {
         return a < b ? -1 : a > b ? 1 : 0;
     });
 
-    return idiomasOrdenados;
+    return ordenado;
 }
 
 export default idiomas;
