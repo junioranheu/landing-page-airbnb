@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect, useRef, useState } from 'react';
+import Navbar from '../../components/home/outros/navbar';
 import SessaoCinco from '../../components/home/sessaoCinco';
 import SessaoDois from '../../components/home/sessaoDois';
 import SessaoQuatro from '../../components/home/sessaoQuatro';
@@ -8,10 +9,6 @@ import ModalCadastrar from '../../components/modal/modalCadastrar';
 import ModalWrapper from '../../components/outros/modalWrapper';
 
 export default function Home() {
-    useEffect(() => {
-        document.title = 'Hospede em sua acomodação no Airbnb';
-    }, [])
-
     const refSessaoDois = useRef(null);
     function handleBotaoSessaoDois() {
         refSessaoDois.current.scrollIntoView();
@@ -22,8 +19,41 @@ export default function Home() {
         setModalCadastrar(!modalCadastrar);
     }
 
+    const [mostrarNavbar, setMostrarNavbar] = useState(false);
+    useEffect(() => {
+        // Scroll: https://stackoverflow.com/questions/62497110/detect-scroll-direction-in-react-js;
+        function handleScroll(e) {
+            const window = e.currentTarget;
+            const yAtual = window.scrollY;
+            // console.log(`Sessão dois: ${ySessaoDois}. Atual: ${yAtual}`);
+
+            if (yAtual >= ySessaoDois) {
+                // console.log('Chegou na sessão dois');
+                setMostrarNavbar(true);
+            } else {
+                setMostrarNavbar(false);
+            }
+        }
+
+        // Title;
+        document.title = 'Hospede em sua acomodação no Airbnb';
+
+        // Guardar a posição Y da sessão 2, para que quando o Y atual atingí-la, mostrar o navbar;
+        const rect = refSessaoDois.current.getBoundingClientRect();
+        const scrollTop = document.documentElement.scrollTop;
+        const ySessaoDois = scrollTop + rect.top;
+        // console.log(ySessaoDois);
+
+        // Scroll;
+        window.addEventListener('scroll', handleScroll);
+    }, []);
+
     return (
         <Fragment>
+            {/* Navbar */}
+            {mostrarNavbar && (<Navbar />)}
+
+            {/* Sessões */}
             <SessaoUm handleBotaoSessaoDois={() => handleBotaoSessaoDois()} handleModalCadastrar={() => handleModalCadastrar()} />
             <SessaoDois referencia={refSessaoDois} />
             <SessaoTres />
