@@ -1,9 +1,9 @@
 import React, { Fragment, useEffect, useRef, useState } from 'react';
 import SessaoCinco from '../../components/home/sessaoCinco';
+import SessaoDois from '../../components/home/sessaoDois';
 import SessaoQuatro from '../../components/home/sessaoQuatro';
+import SessaoTres from '../../components/home/sessaoTres';
 import SessaoUm from '../../components/home/sessaoUm';
-import SessaoDois from '../../components/home/sesssaoDois';
-import SessaoTres from '../../components/home/sesssaoTres';
 import ModalCadastrar from '../../components/modal/modalCadastrar';
 import ModalWrapper from '../../components/outros/modalWrapper';
 
