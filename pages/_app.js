@@ -1,5 +1,7 @@
 import 'animate.css/animate.min.css';
 import React, { Fragment } from 'react';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Footer from '../components/outros/footer';
 import '../fonts/circular.css';
 import '../fonts/homes/crusellia.css';
@@ -12,6 +14,7 @@ function App({ Component, pageProps }) {
   return (
     <Fragment>
       <main className='main'>
+        <ToastContainer />
         <Component {...pageProps} />
         <div id='modalWrapper'></div>
         <Footer />

@@ -98,7 +98,7 @@ export default function Footer() {
                     {/* Esquerda */}
                     <div>
                         <span>
-                            © 2022 Airbnb, Inc
+                            © {new Date().getFullYear()} Airbnb, Inc — @junioranheu
                         </span>
 
                         <span>

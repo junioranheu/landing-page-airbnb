@@ -1,5 +1,7 @@
 :root {
   --overflow-y: auto;
+  --cor-principal: rgba(255, 56, 92, 1);
+  --toastify-color-progress-light: var(--cor-principal);
 }
 
 html, body {
@@ -42,7 +44,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 56, 92, 1);
+  background: var(--cor-principal);
   border-radius: 5px;
 }
 
@@ -51,7 +53,7 @@ a {
 }
 
 ::selection {
-  background: rgba(255, 56, 92, 1);
+  background: var(--cor-principal);
 }
 
 .underline {
@@ -74,6 +76,6 @@ a {
   user-select: none
 }
 
-.swiper-button-next, .swiper-button-prev{
-  color: rgba(255, 56, 92, 1) !important;
+.swiper-button-next, .swiper-button-prev {
+  color: var(--cor-principal) !important;
 }

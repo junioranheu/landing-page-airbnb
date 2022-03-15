@@ -6,7 +6,9 @@ import SessaoTres from '../../components/home/sessao3';
 import SessaoQuatro from '../../components/home/sessao4';
 import SessaoCinco from '../../components/home/sessao5';
 import ModalCadastrar from '../../components/modal/modalCadastrar';
+import { Aviso } from '../../components/outros/aviso';
 import ModalWrapper from '../../components/outros/modalWrapper';
+import EmojiAleatorio from '../../utils/outros/emojiAleatorio';
 
 export default function Home() {
     const refSessaoDois = useRef(null);
@@ -35,9 +37,6 @@ export default function Home() {
             }
         }
 
-        // Title;
-        document.title = 'Hospede em sua acomodação no Airbnb';
-
         // Guardar a posição Y da sessão 2, para que quando o Y atual atingí-la, mostrar o navbar;
         const rect = refSessaoDois.current.getBoundingClientRect();
         const scrollTop = document.documentElement.scrollTop;
@@ -46,6 +45,18 @@ export default function Home() {
 
         // Scroll;
         window.addEventListener('scroll', handleScroll);
+    }, []);
+
+    useEffect(() => {
+        // Título da página;
+        document.title = 'Hospede em sua acomodação no Airbnb — Em React.js, Next.js | junioranheu';
+
+        // Aviso;
+        const msg =
+            `Olá! ${EmojiAleatorio()}<br/><br/> 
+          Essa página foi replicada, sem fins lucrativos, a fim de estudo apenas, utilizando React.js e Next.js, a partir de um projeto real, de uma empresa real.<br/><br/> 
+          Todos os direitos reservados à @airbnb`;
+        Aviso.custom(msg, 20000);
     }, []);
 
     return (
