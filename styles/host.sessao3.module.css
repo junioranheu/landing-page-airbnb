@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 40px
+    gap: 40px;
 }
 
 .sessaoTres div {
@@ -70,3 +70,9 @@
     font-size: 20px;
 }
 
+/* =-=-=-=-=-=-=-=-=-=-=-=- Media queries =-=-=-=-=-=-=-=-=-=-=-=- */
+@media (max-width:1281px) {
+    .sessaoTres {
+        height: 70vh;
+    }
+}

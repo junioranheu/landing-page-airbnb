@@ -91,6 +91,8 @@
     .divEsquerda {
         width: 100vw;
         height: 70vh;
+        bottom: -12px;
+        position: relative;
     }
 
     .divDireita {
@@ -98,9 +100,10 @@
         height: 30vh;
         display: flex;
         justify-content: left;
-        /* border-top-left-radius: 15px;
-        border-top-right-radius: 15px; */
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
         padding-left: 50px;
+        z-index: 1;
     }
 
     .tituloPrincipal {

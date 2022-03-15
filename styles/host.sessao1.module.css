@@ -135,13 +135,15 @@
     .divDireita {
         width: 100vw;
         height: 70vh;
+        bottom: -12px;
+        position: relative;
     }
 
     .nomesAnfitrioes {
         color: #fff;
         position: absolute;
-        bottom: 320px;
-        left: 50px;
+        bottom: 50px;
+        left: 30px;
     }
 
     .divEsquerda {
@@ -151,6 +153,9 @@
         justify-content: left;
         padding-left: 50px;
         background-color: #fff;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        z-index: 1;
     }
 
     .tituloPrincipal {
