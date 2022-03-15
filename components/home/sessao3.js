@@ -55,7 +55,7 @@ export default function SessaoTres() {
                 </div>
 
                 <div>
-                    <span className={Styles.titulo}>Quantas pessoas podem se hospedar?</span>
+                    <span className={Styles.titulo}>Capacidade máxima?</span>
 
                     <select className={Styles.select} onChange={(e) => handleChangeHospedes(e)}>
                         {listaHospedes.map((item, i) => (

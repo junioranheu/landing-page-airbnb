@@ -130,6 +130,7 @@
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=- Media queries =-=-=-=-=-=-=-=-=-=-=-=- */
+/* hi-res laptops and desktops */
 @media (max-width:1281px) {
     .cardUm {
         height: 50vh;
@@ -140,5 +141,27 @@
 
         background-position: 110% 100px;
         background-size: 400px;
+    }
+}
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (max-width:600px) {
+    .cardUm span, .cardDois span {
+        font-size: 1.8em;
+    }
+
+    .aircoverUm, .aircoverDois {
+        font-size: 2.3em !important;
+    }
+
+    .botao {
+        width: 80vw;
+        margin-top: 4vw;
+        border: none;
+    }
+
+    .cardDois {
+        background-position: 150% 130px;
+        background-size: 350px;
     }
 }

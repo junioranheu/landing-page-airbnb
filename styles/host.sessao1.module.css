@@ -126,6 +126,7 @@
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=- Media queries =-=-=-=-=-=-=-=-=-=-=-=- */
+/* hi-res laptops and desktops */
 @media (max-width:1281px) {
     .sessaoUm {
         display: flex;
@@ -135,15 +136,13 @@
     .divDireita {
         width: 100vw;
         height: 70vh;
-        bottom: -12px;
-        position: relative;
     }
 
     .nomesAnfitrioes {
         color: #fff;
         position: absolute;
-        bottom: 50px;
-        left: 30px;
+        bottom: 300px;
+        left: 50px;
     }
 
     .divEsquerda {
@@ -155,7 +154,6 @@
         background-color: #fff;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
-        z-index: 1;
     }
 
     .tituloPrincipal {
@@ -169,6 +167,27 @@
     }
 
     .botaoNavegarBaixo {
-       display: none;
+        display: none;
+    }
+}
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (max-width:600px) {
+    .nomesAnfitrioes {
+        bottom: 250px;
+        left: 30px;
+    }
+
+    .spanAnfitriaoTitulo {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .spanAnfitriaoDescricao {
+        font-size: 15px;
+    }
+
+    .tituloPrincipal {
+        font-size: 40px;
     }
 }

@@ -75,9 +75,20 @@
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=- Media queries =-=-=-=-=-=-=-=-=-=-=-=- */
+/* hi-res laptops and desktops */
 @media (max-width:1281px) {
     .sessaoDois {
         height: 100vh;
-        /* margin-top: 0vw; */
+    }
+}
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (max-width:600px) {
+    .sessaoDois {
+        height: 80vh;
+    }
+
+    .tituloPrincipal {
+        font-size: 26px;
     }
 }
