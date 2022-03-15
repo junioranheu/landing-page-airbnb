@@ -29,7 +29,17 @@ export default function SessaoDois(props) {
                         spaceBetween={50} slidesPerView={3}
                         modules={[Navigation]}
                         navigation
-                    >
+                        breakpoints={{
+                            1: {
+                                slidesPerView: 1,
+                            },
+                            600: {
+                                slidesPerView: 2,
+                            },
+                            801: {
+                                slidesPerView: 3,
+                            },
+                        }}>
                         <SwiperSlide>
                             <Slide
                                 style={Styles}

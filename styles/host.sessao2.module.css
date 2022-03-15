@@ -80,6 +80,10 @@
     .sessaoDois {
         height: 100vh;
     }
+
+    .tituloPrincipal {
+        font-size: 50px;
+    }
 }
 
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */

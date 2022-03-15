@@ -174,7 +174,7 @@
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 @media (max-width:600px) {
     .nomesAnfitrioes {
-        bottom: 250px;
+        bottom: 300px;
         left: 30px;
     }
 
