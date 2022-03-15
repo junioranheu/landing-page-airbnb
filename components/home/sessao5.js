@@ -20,7 +20,7 @@ export default function SessaoCinco(props) {
     return (
         <div className={Styles.sessaoCinco}>
             <div className={Styles.divEsquerda}>
-                <video className={Styles.video} autoPlay loop muted playsinline='true' disablePictureInPicture='true' ref={refVideo}
+                <video className={Styles.video} autoPlay loop muted playsinline ref={refVideo}
                     aria-label='Três anfitriões diferentes preparam seus lugares para a chegada dos hóspedes. A primeira anfitriã mostra um pão recém-saído do forno. O segundo anfitrião escreve um recado de boas-vindas para seu hóspede. A terceira anfitriã coloca uma tigela de limões sobre a mesa.'>
                     <source src={VideoDois} type='video/mp4' />
                 </video>
