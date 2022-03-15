@@ -124,3 +124,46 @@
 .spanAnfitriaoMaria {
     font-family: 'saturdaypartygt';
 }
+
+/* =-=-=-=-=-=-=-=-=-=-=-=- Media queries =-=-=-=-=-=-=-=-=-=-=-=- */
+@media (max-width:1281px) {
+    .sessaoUm {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .divDireita {
+        width: 100vw;
+        height: 70vh;
+    }
+
+    .nomesAnfitrioes {
+        color: #fff;
+        position: absolute;
+        bottom: 320px;
+        left: 50px;
+    }
+
+    .divEsquerda {
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+        justify-content: left;
+        padding-left: 50px;
+        background-color: #fff;
+    }
+
+    .tituloPrincipal {
+        font-size: 65px;
+        text-align: left;
+        color: #000;
+    }
+
+    .divBotao {
+        display: none;
+    }
+
+    .botaoNavegarBaixo {
+       display: none;
+    }
+}

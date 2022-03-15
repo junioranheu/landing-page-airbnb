@@ -81,3 +81,35 @@
     width: 70%;
 }
 
+/* =-=-=-=-=-=-=-=-=-=-=-=- Media queries =-=-=-=-=-=-=-=-=-=-=-=- */
+@media (max-width:1281px) {
+    .sessaoCinco {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .divEsquerda {
+        width: 100vw;
+        height: 70vh;
+    }
+
+    .divDireita {
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+        justify-content: left;
+        /* border-top-left-radius: 15px;
+        border-top-right-radius: 15px; */
+        padding-left: 50px;
+    }
+
+    .tituloPrincipal {
+        font-size: 35px;
+        text-align: left;
+    }
+
+    .divBotao {
+        margin-top: 4vw;
+        justify-content: left;
+    }
+}

@@ -15,7 +15,7 @@ export default function SessaoCinco(props) {
             refVideo.current.play();
             setIsPlaying(true);
         }
-    }
+    } 
 
     return (
         <div className={Styles.sessaoCinco}>
