@@ -8,7 +8,8 @@
     justify-content: center;
     align-items: center;
 
-    margin-top: 8vw;
+    /* margin-top: 8vw; */
+    margin-top: 2vw;
 }
 
 .tituloPrincipal {
@@ -28,19 +29,19 @@
     /* background-color: pink; */
     margin-top: 4vw;
     width: 85vw;
+
+        /* Sem highlight */
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
 }
 
 .imgAnfitriao {
     border-radius: 4px;
     cursor: pointer;
-
-    /* Sem highlight */
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 .divDescricao {
