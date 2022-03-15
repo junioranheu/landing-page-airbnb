@@ -56,7 +56,7 @@ export default function Home() {
             `Olá! ${EmojiAleatorio()}<br/><br/> 
           Essa página foi replicada, sem fins lucrativos, a fim de estudo apenas, utilizando React.js e Next.js, a partir de um projeto real, de uma empresa real.<br/><br/> 
           Feito por @junioranheu.<br/><br/> 
-          Todos os direitos reservados à @airbnb`;
+          Todos os direitos reservados à @airbnb.`;
         Aviso.custom(msg, 20000);
     }, []);
 
