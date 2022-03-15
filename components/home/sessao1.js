@@ -115,7 +115,7 @@ export default function SessaoUm(props) {
             </div>
 
             <div className={Styles.divDireita}>
-                <video className={Styles.video} autoPlay loop muted ref={refVideo}
+                <video className={Styles.video} autoPlay loop muted playsinline='true' disablePictureInPicture='true' ref={refVideo}
                     aria-label='Chelsea, anfitriã na Filadélfia, sorri ao abrir a porta. Soraya, anfitriã em Mumbai, sorri ao abrir a porta da frente com outra pessoa ao seu lado. Mohamed, anfitrião em Joanesburgo, sorri ao abrir a porta. Maria, anfitriã na Cidade do México, acena com a cabeça e sorri ao carregar uma planta.'>
                     <source src={VideoUm} type='video/mp4' />
                 </video>
