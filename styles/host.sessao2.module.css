@@ -73,3 +73,12 @@
     font-weight: 100;
     text-align: left;
 }
+
+/* =-=-=-=-=-=-=-=-=-=-=-=- Media queries =-=-=-=-=-=-=-=-=-=-=-=- */
+@media (max-width:1281px) {
+    .sessaoDois {
+        /* background-color: plum; */
+        height: 90vh;
+        margin-top: 0vw;
+    }
+}

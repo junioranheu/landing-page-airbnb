@@ -11,7 +11,7 @@
     /* background-color: pink; */
 }
 
-.divPrincipal:nth-child(2){
+.divPrincipal:nth-child(2) {
     margin-top: 3vw;
 }
 
@@ -127,4 +127,18 @@
     border-color: #000000;
     background: #F7F7F7;
     color: #222222;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=- Media queries =-=-=-=-=-=-=-=-=-=-=-=- */
+@media (max-width:1281px) {
+    .cardUm {
+        height: 50vh;
+    }
+
+    .cardDois {
+        height: 50vh;
+
+        background-position: 110% 100px;
+        background-size: 400px;
+    }
 }
