@@ -19,100 +19,102 @@ import Slide from './outros/slide';
 
 export default function SessaoDois(props) {
     return (
-        <div className={Styles.sessaoDois} ref={props.referencia}>
-            <div className={Styles.tituloPrincipal}>
-                <span>Você pode hospedar</span>
-                <span>onde quiser, quando quiser</span>
+        <div ref={props.referencia}>
+            <div className={Styles.sessaoDois}>
+                <div className={Styles.tituloPrincipal}>
+                    <span>Você pode hospedar</span>
+                    <span>onde quiser, quando quiser</span>
 
-                <Swiper className={Styles.carousel}
-                    spaceBetween={50} slidesPerView={3}
-                    modules={[Navigation]}
-                    navigation
-                >
-                    <SwiperSlide>
-                        <Slide
-                            style={Styles}
-                            imgAnfitriao={ImgAnfitriao1}
-                            imgAnfitriaoWidth={500}
-                            imgAnfitriaoHeight={500}
-                            descricao={'Compartilhar meu estúdio mudou minha vida, me presenteou com experiências inesquecíveis e me permitiu conhecer pessoas incríveis.'}
-                            imgAssinatura={ImgAssinatura1}
-                            imgAssinaturaWidth={59}
-                            imgAssinaturaHeight={32}
-                            info={'Anfitriã em Milão'}
-                        />
-                    </SwiperSlide>
+                    <Swiper className={Styles.carousel}
+                        spaceBetween={50} slidesPerView={3}
+                        modules={[Navigation]}
+                        navigation
+                    >
+                        <SwiperSlide>
+                            <Slide
+                                style={Styles}
+                                imgAnfitriao={ImgAnfitriao1}
+                                imgAnfitriaoWidth={500}
+                                imgAnfitriaoHeight={500}
+                                descricao={'Compartilhar meu estúdio mudou minha vida, me presenteou com experiências inesquecíveis e me permitiu conhecer pessoas incríveis.'}
+                                imgAssinatura={ImgAssinatura1}
+                                imgAssinaturaWidth={59}
+                                imgAssinaturaHeight={32}
+                                info={'Anfitriã em Milão'}
+                            />
+                        </SwiperSlide>
 
-                    <SwiperSlide>
-                        <Slide
-                            style={Styles}
-                            imgAnfitriao={ImgAnfitriao2}
-                            imgAnfitriaoWidth={500}
-                            imgAnfitriaoHeight={500}
-                            descricao={'Anunciar minha acomodação no Airbnb me permitiu traçar um caminho para a liberdade financeira.'}
-                            imgAssinatura={ImgAssinatura2}
-                            imgAssinaturaWidth={100}
-                            imgAssinaturaHeight={32}
-                            info={'Anfitriã em Atlanta'}
-                        />
-                    </SwiperSlide>
+                        <SwiperSlide>
+                            <Slide
+                                style={Styles}
+                                imgAnfitriao={ImgAnfitriao2}
+                                imgAnfitriaoWidth={500}
+                                imgAnfitriaoHeight={500}
+                                descricao={'Anunciar minha acomodação no Airbnb me permitiu traçar um caminho para a liberdade financeira.'}
+                                imgAssinatura={ImgAssinatura2}
+                                imgAssinaturaWidth={100}
+                                imgAssinaturaHeight={32}
+                                info={'Anfitriã em Atlanta'}
+                            />
+                        </SwiperSlide>
 
-                    <SwiperSlide>
-                        <Slide
-                            style={Styles}
-                            imgAnfitriao={ImgAnfitriao3}
-                            imgAnfitriaoWidth={500}
-                            imgAnfitriaoHeight={500}
-                            descricao={'Conseguimos manter nossa cultura viva ao oferecer nossa experiência de produção de massas.'}
-                            imgAssinatura={ImgAssinatura3}
-                            imgAssinaturaWidth={90}
-                            imgAssinaturaHeight={32}
-                            info={'Anfitriã em Palombara Sabina'}
-                        />
-                    </SwiperSlide>
+                        <SwiperSlide>
+                            <Slide
+                                style={Styles}
+                                imgAnfitriao={ImgAnfitriao3}
+                                imgAnfitriaoWidth={500}
+                                imgAnfitriaoHeight={500}
+                                descricao={'Conseguimos manter nossa cultura viva ao oferecer nossa experiência de produção de massas.'}
+                                imgAssinatura={ImgAssinatura3}
+                                imgAssinaturaWidth={90}
+                                imgAssinaturaHeight={32}
+                                info={'Anfitriã em Palombara Sabina'}
+                            />
+                        </SwiperSlide>
 
-                    <SwiperSlide>
-                        <Slide
-                            style={Styles}
-                            imgAnfitriao={ImgAnfitriao4}
-                            imgAnfitriaoWidth={500}
-                            imgAnfitriaoHeight={500}
-                            descricao={'O Airbnb me possibilitou trabalhar de forma independente fazendo algo que amo — cuidar dos hóspedes em nossa casa.'}
-                            imgAssinatura={ImgAssinatura4}
-                            imgAssinaturaWidth={59}
-                            imgAssinaturaHeight={32}
-                            info={'Anfitriã em Chiang Mai'}
-                        />
-                    </SwiperSlide>
+                        <SwiperSlide>
+                            <Slide
+                                style={Styles}
+                                imgAnfitriao={ImgAnfitriao4}
+                                imgAnfitriaoWidth={500}
+                                imgAnfitriaoHeight={500}
+                                descricao={'O Airbnb me possibilitou trabalhar de forma independente fazendo algo que amo — cuidar dos hóspedes em nossa casa.'}
+                                imgAssinatura={ImgAssinatura4}
+                                imgAssinaturaWidth={59}
+                                imgAssinaturaHeight={32}
+                                info={'Anfitriã em Chiang Mai'}
+                            />
+                        </SwiperSlide>
 
-                    <SwiperSlide>
-                        <Slide
-                            style={Styles}
-                            imgAnfitriao={ImgAnfitriao5}
-                            imgAnfitriaoWidth={500}
-                            imgAnfitriaoHeight={500}
-                            descricao={'Hospedar em minha tenda beduína me permitiu conhecer pessoas do mundo todo.'}
-                            imgAssinatura={ImgAssinatura5}
-                            imgAssinaturaWidth={128}
-                            imgAssinaturaHeight={32}
-                            info={'Anfitriã em Wadi Rum'}
-                        />
-                    </SwiperSlide>
+                        <SwiperSlide>
+                            <Slide
+                                style={Styles}
+                                imgAnfitriao={ImgAnfitriao5}
+                                imgAnfitriaoWidth={500}
+                                imgAnfitriaoHeight={500}
+                                descricao={'Hospedar em minha tenda beduína me permitiu conhecer pessoas do mundo todo.'}
+                                imgAssinatura={ImgAssinatura5}
+                                imgAssinaturaWidth={128}
+                                imgAssinaturaHeight={32}
+                                info={'Anfitriã em Wadi Rum'}
+                            />
+                        </SwiperSlide>
 
-                    <SwiperSlide>
-                        <Slide
-                            style={Styles}
-                            imgAnfitriao={ImgAnfitriao6}
-                            imgAnfitriaoWidth={500}
-                            imgAnfitriaoHeight={500}
-                            descricao={'Adoro hospedar em minha casa ecológica e assim promover a conexão das pessoas com a natureza e entre si.'}
-                            imgAssinatura={ImgAssinatura6}
-                            imgAssinaturaWidth={128}
-                            imgAssinaturaHeight={32}
-                            info={'Anfitriã em Paraty'}
-                        />
-                    </SwiperSlide>
-                </Swiper>
+                        <SwiperSlide>
+                            <Slide
+                                style={Styles}
+                                imgAnfitriao={ImgAnfitriao6}
+                                imgAnfitriaoWidth={500}
+                                imgAnfitriaoHeight={500}
+                                descricao={'Adoro hospedar em minha casa ecológica e assim promover a conexão das pessoas com a natureza e entre si.'}
+                                imgAssinatura={ImgAssinatura6}
+                                imgAssinaturaWidth={128}
+                                imgAssinaturaHeight={32}
+                                info={'Anfitriã em Paraty'}
+                            />
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
             </div>
         </div>
     )
