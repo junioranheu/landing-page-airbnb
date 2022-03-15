@@ -27,15 +27,6 @@ export default function SessaoCinco(props) {
                     <source src={VideoDoisMp4} type='video/mp4' />
                 </video>
 
-                {/* <div dangerouslySetInnerHTML={{
-                    __html: `
-                    <video className={Styles.video} autoPlay loop muted playsinline disablePictureInPicture controls={false} ref={refVideo}
-                    aria-label='Três anfitriões diferentes preparam seus lugares para a chegada dos hóspedes. A primeira anfitriã mostra um pão recém-saído do forno. O segundo anfitrião escreve um recado de boas-vindas para seu hóspede. A terceira anfitriã coloca uma tigela de limões sobre a mesa.'>
-                    <source src={VideoDoisWebm} type='video/webm' />
-                    <source src={VideoDoisMp4} type='video/mp4' />
-                </video>,
-      ` }}></div> */}
-
                 <div className={Styles.divPlay}>
                     <div>
                         <BotaoPlay isPlaying={isPlaying} handleReproduzirVideo={() => handleReproduzirVideo()} style={Styles} />
