@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
-import VideoDois from '../../static/videos/videoDois.webm';
+import VideoDoisMp4 from '../../static/videos/videoDois.mp4';
+import VideoDoisWebm from '../../static/videos/videoDois.webm';
 import StylesGeral from '../../styles/host.geral.module.css';
 import Styles from '../../styles/host.sessao5.module.css';
 import BotaoPlay from '../svg/botaoPlay';
@@ -22,7 +23,8 @@ export default function SessaoCinco(props) {
             <div className={Styles.divEsquerda}>
                 <video className={Styles.video} autoPlay loop muted playsinline ref={refVideo}
                     aria-label='Três anfitriões diferentes preparam seus lugares para a chegada dos hóspedes. A primeira anfitriã mostra um pão recém-saído do forno. O segundo anfitrião escreve um recado de boas-vindas para seu hóspede. A terceira anfitriã coloca uma tigela de limões sobre a mesa.'>
-                    <source src={VideoDois} type='video/mp4' />
+                    <source src={VideoDoisWebm} type='video/webm' />
+                    <source src={VideoDoisMp4} type='video/mp4' />
                 </video>
 
                 <div className={Styles.divPlay}>
