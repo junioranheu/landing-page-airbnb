@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
-import VideoUm from '../../static/videos/videoUm.webm';
+import VideoUmMp4 from '../../static/videos/videoUm.mp4';
+import VideoUmWebm from '../../static/videos/videoUm.webm';
 import StylesGeral from '../../styles/host.geral.module.css';
 import Styles from '../../styles/host.sessao1.module.css';
 import BotaoPlay from '../svg/botaoPlay';
@@ -115,9 +116,10 @@ export default function SessaoUm(props) {
             </div>
 
             <div className={Styles.divDireita}>
-                <video className={Styles.video} autoPlay loop muted playsinline='true' disablePictureInPicture='true' ref={refVideo}
+                <video className={Styles.video} autoPlay loop muted playsinline disablePictureInPicture controls={false} ref={refVideo}
                     aria-label='Chelsea, anfitriã na Filadélfia, sorri ao abrir a porta. Soraya, anfitriã em Mumbai, sorri ao abrir a porta da frente com outra pessoa ao seu lado. Mohamed, anfitrião em Joanesburgo, sorri ao abrir a porta. Maria, anfitriã na Cidade do México, acena com a cabeça e sorri ao carregar uma planta.'>
-                    <source src={VideoUm} type='video/mp4' />
+                    <source src={VideoUmWebm} type='video/mp4' />
+                    <source src={VideoUmMp4} type='video/mp4' />
                 </video>
 
                 <div className={Styles.nomesAnfitrioes}>
