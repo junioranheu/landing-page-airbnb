@@ -41,9 +41,15 @@
 }
 
 /* Select */
+.select::-ms-expand {
+    /* Esconder arrow no IE */
+    display: none;
+} 
+
 .select {
     /* background-color: pink; */
     width: 500px;
+    color: #000;
     border: none;
     cursor: pointer;
     text-align: center;
@@ -64,11 +70,6 @@
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: '';
-}
-
-.select::-ms-expand {
-    /* Esconder arrow no IE */
-    display: none;
 }
 
 .select:focus {
@@ -94,6 +95,8 @@
     }
 
     .select {
+        width: 300px;
+
         /* Escrita */
         font-weight: 400;
         font-size: 25px;

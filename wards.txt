@@ -3,4 +3,3 @@ https://www.airbnb.com.br/
 
 --
 Ajustar responsividade quando altera o height;
-Verificar questão do select em outros navegadores (safari);
