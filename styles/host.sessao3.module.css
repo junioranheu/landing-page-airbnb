@@ -51,15 +51,24 @@
     /* Escrita */
     font-weight: 600;
     font-size: 40px;
+    line-height: 45px;
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
 
+    /* Ícone da arrow - https://medium.com/@keithchasen/how-to-implement-chrome-style-for-select-tag-in-all-browsers-9397afebe729 */
+    background: url('/static/images/outros/arrow.svg') no-repeat 100% 50%;
+
     /* Esconder arrow */
-    /* -webkit-appearance: none;
+    -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
-    text-overflow: ''; */
+    text-overflow: '';
+}
+
+.select::-ms-expand {
+    /* Esconder arrow no IE */
+    display: none;
 }
 
 .select:focus {
@@ -83,7 +92,7 @@
         font-size: 30px;
         line-height: 30px;
     }
- 
+
     .select {
         /* Escrita */
         font-weight: 400;
