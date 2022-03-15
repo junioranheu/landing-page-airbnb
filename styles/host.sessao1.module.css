@@ -71,8 +71,8 @@
 .nomesAnfitrioes {
     color: #fff;
     position: absolute;
-    bottom: 2.5vw;
-    left: 53vw;
+    bottom: 5%;
+    left: 53%;
 }
 
 .botaoReproduzirVideo {
@@ -141,8 +141,8 @@
     .nomesAnfitrioes {
         color: #fff;
         position: absolute;
-        bottom: 300px;
-        left: 50px;
+        bottom: 35%;
+        left: 5%;
     }
 
     .divEsquerda {
@@ -167,15 +167,21 @@
     }
 
     .botaoNavegarBaixo {
-        display: none;
+        position: absolute;
+        bottom: 10vw;
+        left: 50%;
+    }
+
+    .botaoNavegarBaixo svg {
+        stroke: #000 !important;
     }
 }
 
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 @media (max-width:600px) {
     .nomesAnfitrioes {
-        bottom: 300px;
-        left: 30px;
+        bottom: 33%;
+        left: 7%;
     }
 
     .spanAnfitriaoTitulo {
@@ -191,3 +197,4 @@
         font-size: 40px;
     }
 }
+
