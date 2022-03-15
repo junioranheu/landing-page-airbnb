@@ -1,5 +1,4 @@
 .navbar {
-    color: pink;
     overflow: hidden;
     background-color: #fff;
     position: fixed;
@@ -92,9 +91,17 @@
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=- Media queries =-=-=-=-=-=-=-=-=-=-=-=- */
-/* hi-res laptops and desktops */
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 @media (max-width:600px) {
+    .navbar {
+        top: auto;
+        /* bottom: 0; */
+    }
+
+    .divDireita div:nth-child(2) input {
+        width: 80vw;
+    }
+
     .aSuperHost {
         display: none !important;
     }

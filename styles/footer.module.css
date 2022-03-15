@@ -81,6 +81,7 @@
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=- Media queries =-=-=-=-=-=-=-=-=-=-=-=- */
+/* hi-res laptops and desktops */
 @media (max-width:1281px) {
     /* =-=-=-=-=-=-=-=-=-=-=-=- Principal =-=-=-=-=-=-=-=-=-=-=-=- */
     .principal {
@@ -127,7 +128,9 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 10px;
+        gap: 10px;  
+        padding-top: 21px;
+        margin-top: 3vw;
     }
 
     .secundaria div:first-child span:first-child {
@@ -140,5 +143,12 @@
     .secundaria div:first-child span:nth-child(2) {
         display: none;
         /* background-color: pink; */
+    }
+}
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (max-width:600px) {
+    .direita {
+        display: none !important;
     }
 }
