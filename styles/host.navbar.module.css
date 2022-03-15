@@ -90,3 +90,12 @@
     color: rgb(34, 34, 34);
     margin-left: 12px;
 }
+
+/* =-=-=-=-=-=-=-=-=-=-=-=- Media queries =-=-=-=-=-=-=-=-=-=-=-=- */
+/* hi-res laptops and desktops */
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (max-width:600px) {
+    .aSuperHost {
+        display: none !important;
+    }
+}

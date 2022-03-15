@@ -3,7 +3,7 @@
     margin-top: 3vw;
     width: 100vw;
     height: 100vh;
-    display: flex; 
+    display: flex;
 }
 
 .divEsquerda {
@@ -29,7 +29,7 @@
     margin-top: -0.2em;
 }
 
-.tituloPequeno{
+.tituloPequeno {
     margin-top: 1.8vw !important;
     font-size: 20px !important;
     font-weight: 400 !important;
@@ -82,9 +82,10 @@
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=- Media queries =-=-=-=-=-=-=-=-=-=-=-=- */
+/* hi-res laptops and desktops */
 @media (max-width:1281px) {
     .sessaoCinco {
-        display: flex; 
+        display: flex;
         flex-direction: column;
     }
 
@@ -114,5 +115,34 @@
     .divBotao {
         margin-top: 4vw;
         justify-content: left;
+    }
+}
+
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (max-width:600px) {
+    .divEsquerda {
+        height: 65vh;
+    }
+
+    .divDireita {
+        height: 35vh;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .tituloPrincipal {
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .divBotao {
+        margin-top: 4vw;
+        justify-content: left;
+    }
+
+    .divPlay {
+        bottom: 75px;
+        left: 3vw;
     }
 }
