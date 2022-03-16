@@ -98,7 +98,15 @@ export default function Footer() {
                     {/* Esquerda */}
                     <div>
                         <span>
-                            © {new Date().getFullYear()} Airbnb, Inc — @junioranheu
+                            © {new Date().getFullYear()} Airbnb, Inc — Desenvolvido por
+
+                            <Link href='https://github.com/junioranheu'>
+                                <a target='_blank'>
+                                    <span>
+                                        <span className='cor-principal-hover'>&nbsp;@junioranheu</span>
+                                    </span>
+                                </a>
+                            </Link>
                         </span>
 
                         <span>
@@ -125,13 +133,13 @@ export default function Footer() {
                             <Link href='/'><a>Mapa do site</a></Link>
                         </span>
 
-                        <span>
+                        {/* <span>
                             ·
                         </span>
 
                         <span>
                             <Link href='/'><a>Informações da empresa</a></Link>
-                        </span>
+                        </span> */}
                     </div>
 
                     {/* Direita */}
