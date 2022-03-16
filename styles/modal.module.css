@@ -52,7 +52,7 @@
     align-items: center;
 }
 
-.cabecalhoTitulo{
+.cabecalhoTitulo {
     /* color: pink; */
     font-size: 1.2em;
     font-weight: 500;
@@ -180,4 +180,17 @@
 
 .itemA div:nth-child(2) {
     color: rgb(113, 113, 113);
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=- Media queries =-=-=-=-=-=-=-=-=-=-=-=- */
+@media (max-width:1281px) {
+    .modal {
+        width: 50vw !important;
+    }
+}
+
+@media (max-width:800px) {
+    .modal {
+        width: 80vw !important;
+    }
 }
