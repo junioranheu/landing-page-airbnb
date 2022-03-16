@@ -59,7 +59,7 @@
 .divDireita {
     background-color: #000;
     width: 50vw;
-}
+} 
 
 .video {
     height: 100%;
@@ -138,6 +138,10 @@
         height: 70vh;
     }
 
+    .video {
+        object-fit: contain;
+    }    
+
     .nomesAnfitrioes {
         color: #fff;
         position: absolute;
@@ -179,6 +183,11 @@
 
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 @media (max-width:600px) {
+    .video {
+        object-fit:cover;
+        object-position: center;
+    }    
+
     .nomesAnfitrioes {
         bottom: 33%;
         left: 7%;
