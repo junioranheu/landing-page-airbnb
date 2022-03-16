@@ -2,4 +2,5 @@ https://www.airbnb.com.br/host/homes
 https://www.airbnb.com.br/
 
 --
-Ajustar responsividade quando altera o height;
+Ajustar responsividade quando altera o height (para mobiles muito pequenos);
+Ajustar responsividade dos modais
